@@ -1,0 +1,286 @@
+
+html{
+	font-family:Courier New;
+	
+}
+body {
+    font-family: Courier New, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #605f5f;
+  }
+
+h2{
+	color:#19d626; 
+}
+#mainTitle{
+	color: #19d626; 
+	text-align: center;
+	font-size: 40px;
+	background-color: #333;
+	margin-bottom:-5px;
+	margin-top:0px;
+
+}
+
+/* navbar style */
+.navbar {
+	background-color: #333;
+	font-size: 22px;
+	line-height: 22px;
+	color: #19d626;
+	display: flex;
+	justify-content: center;
+	
+	
+  }
+
+.navbar a {
+	padding: 8px 10px;
+	color: #19d626;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;	
+  }
+
+
+.flexcontainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+	
+}
+
+/* left style */
+.gpubutton{
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	justify-content: space-between;
+	padding: 10px 10px;
+	margin: 0 5px;
+	font-weight: bold;
+	color: whitesmoke;
+	border-style: solid;
+	border-color: #858585;
+	width: 300px;
+	height: 30px;
+	margin: 2px;
+
+}
+.gpubutton:hover{
+	background-color: #858585;
+}
+.gpustyle{
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: space-around;
+		border-style: solid;
+		border-color: #19d626;
+		border-width: 4px;
+		min-height: 520px;
+		width: 350px;
+		background-color: #333;
+		
+}
+
+#gpuTotal{
+	display: flex;
+	justify-content: center;
+}
+/*middle style*/
+
+.middlestyle{
+	
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: center;
+		align-content: space-around;
+		border-style: solid;
+		border-color: #19d626;
+		border-width: 4px;
+		min-height: 520px;
+		width: 350px;
+		margin: 10px;
+		color: whitesmoke;
+		background-color: #333;
+	
+}
+
+/* mine button */
+.clickerstyle {
+	box-shadow: 0 9px #3a3b3b;
+	background-color:#3a3b3b;
+	border:6px solid #858585;
+    display: center;
+    width: 160px;
+    height: 70px;
+	cursor: url(https://i.imgur.com/emJel61.png), auto;
+	color:#19d626;
+	font-family:Courier New;
+	font-size:28px;
+	font-weight:bold;
+	padding:10px 5px;
+	text-decoration:none;
+    text-shadow:0px 5px 0px #333;
+	box-shadow: 5px 7px black;
+	margin-bottom: 5px;
+	margin-top:-5px;
+	
+
+}
+.clicker:hover {
+	background-color:#3a3b3b;
+}
+#clicker:active {
+	
+	box-shadow: 3px 4px black;
+	transform: translateY(4px);
+}
+
+
+#hash{
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+	color: #19d626;
+	margin-bottom: 30px;
+	
+}
+#midinfo{
+font-weight:bold;\
+font-size: 20px;
+
+}
+#hesscoinsat{
+	text-indent:.8em;
+}
+#mid1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	justify-content: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	
+}
+#mid2{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
+
+/* right style */
+.infstyle{
+	
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: space-around;
+		border-style: solid;
+		border-color: #19d626;
+		background-color: #333;
+		border-width: 4px;
+		min-height: 520px;
+		width: 350px;
+}
+
+.infbutton{
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	justify-content: space-between;
+	padding: 10px 10px;
+	margin: 0 5px;
+	font-weight: bold;
+	color: whitesmoke;
+	border-style: solid;
+	border-color: #858585;
+	width: 300px;
+	height: 30px;
+	margin: 2px;
+}
+.infbutton:hover{
+	background-color: #858585;
+}
+
+#infTotal{
+	display: flex;
+	justify-content: center;
+}
+#coinsperclick{
+	font-weight: bold;
+	color: whitesmoke;
+}
+#pricepersec{
+	font-weight: bold;
+	color: whitesmoke;
+}
+#eachtotal{
+	color: #19d626;
+	font-size: 18px;
+}
+#money{
+	color: #19d626;
+	font-size: 18px;
+}
+
+#highscore{
+	color: #19d626; 
+	text-align: center;
+	font-size: 40px;
+	background-color: #333;
+	margin-bottom:-5px;
+	margin-top:0px;
+}
+
+.hs-table{
+	display: flex;
+	justify-content: center;
+	
+	border-color: #333;
+}
+table{	
+	margin-top: 10px;
+	border-collapse: collapse;
+	
+}
+th, td{
+	color: #19d626;
+	border-style:solid;
+	border-color: #333;
+	border-width: 5px;
+	font-weight: bold;
+}
+#tablekey{
+	font-size: 35px;
+}
+/* 404 
+#middle{
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	font-size: 42px;
+}
+*/
+
+
+#buylegend{
+	color:#19d626;
+}
+
