@@ -72,6 +72,10 @@ a {
     font-weight: bolder;
     padding: 24px 12px;
 }
+.resume:hover {
+    background-color: rgb(152, 221, 235);
+    padding: 26px 13px;
+}
 .section {
     padding-top: 0%;
 }
