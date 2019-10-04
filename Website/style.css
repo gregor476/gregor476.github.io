@@ -7,6 +7,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: rgb(39, 40, 34);
+    padding-bottom: 20%;
 }
 
 /*
@@ -38,15 +39,16 @@ h1 {
     color: rgb(102,217,239);
 }
 h2 {
+    font-size: 200%;
     font-style: italic;
     color: rgb(166, 220, 41);
 }
 h3 {
-    font-size: 36px;
+    font-size: 200%;
     color: rgb(249, 38, 89);
 }
 p {
-    font-size: 24px;
+    font-size: 200%;
     color: rgb(206, 190, 88);
 }
 a {
@@ -58,13 +60,9 @@ a {
     font-size: 26px;
     margin-left: 2%
 }
-.resume {
-    float: right;
-    margin-top: 18px;
-    margin-right: 2%;
-
+.button {
     border: none;
-    background-color: rgb(102,217,239);
+    background-color: rgb(253, 151, 31);
     border-radius: 12px;
 
     
@@ -72,12 +70,21 @@ a {
     font-weight: bolder;
     padding: 24px 12px;
 }
-.resume:hover {
-    background-color: rgb(152, 221, 235);
+.resume {
+    float: right;
+    margin-top: 18px;
+    margin-right: 2%;
+}
+.button:hover {
+    background-color: rgb(253, 151, 31);
     padding: 26px 13px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.buttontext {
+    text-align: center;
 }
 .section {
-    padding-top: 0%;
+    padding-top: 30%;
 }
 .linked {
     color: rgb(253, 151, 31);
@@ -93,10 +100,37 @@ a {
     grid-row-gap: 8%;
     grid-template-columns: 20% 20% 20%;
     
+    margin: 0 auto;
+    width: 80vw;
+    height: 40vw;
+    font-size: 1rem;
+    
 }
 .gridbox {
+    flex: 1 0 auto;
+    position: relative;
     background-color: rgb(53, 53, 43);
+}
+.gridbox:after {
+    content: "";
+    float:left;
+    display: block;
+    padding-top: 100%;
 }
 .projectname {
     font-size: 16px;
+}
+.mail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+    border: none;
+    background-color: rgb(253, 151, 31);
+    border-radius: 12px;
+
+    
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 24px 12px;
 }
