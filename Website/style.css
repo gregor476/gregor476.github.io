@@ -20,11 +20,7 @@ orange rgb(253, 151, 31)
 yellow rgb(200, 219, 116)
 */
 
-header {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(53, 53, 43);
-}
+
 li {
     display: inline-block;
     list-style-type: none;
@@ -56,17 +52,21 @@ a {
     text-decoration: none;
     color: rgb(53, 53, 43);
 }
-
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(53, 53, 43);
+}
 .myname {
     font-size: 26px;
-    margin-left: 2%
+    margin-left: 4%
 }
 .button {
+    display: block;
     border: none;
     background-color: rgb(253, 151, 31);
     border-radius: 12px;
 
-    
     font-size: 24px;
     font-weight: bolder;
     padding: 24px 12px;
@@ -74,11 +74,11 @@ a {
 .resume {
     float: right;
     margin-top: 18px;
-    margin-right: 2%;
+    margin-right: 4%;
+    width: 120px;
 }
 .button:hover {
-    background-color: rgb(253, 151, 31);
-    padding: 26px 13px;
+    background-color: rgb(255, 196, 129);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .buttontext {
@@ -122,16 +122,7 @@ a {
     font-size: 16px;
 }
 .mail {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 120px;
-    border: none;
-    background-color: rgb(253, 151, 31);
-    border-radius: 12px;
-
-    
-    font-size: 24px;
-    font-weight: bolder;
-    padding: 24px 12px;
 }
