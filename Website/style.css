@@ -32,11 +32,12 @@ li {
     padding: 0;
 }
 main {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
 h1 {
-    color: rgb(102,217,239);
+    color: rgb(249, 38, 89);
+    
 }
 h2 {
     font-size: 200%;
@@ -45,10 +46,10 @@ h2 {
 }
 h3 {
     font-size: 200%;
-    color: rgb(249, 38, 89);
+    color: rgb(102,217,239);
 }
 p {
-    font-size: 200%;
+    font-size: 150%;
     color: rgb(206, 190, 88);
 }
 a {
@@ -124,7 +125,7 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 12%;
+    width: 120px;
     border: none;
     background-color: rgb(253, 151, 31);
     border-radius: 12px;
