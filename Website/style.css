@@ -1,0 +1,32 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(39, 40, 34);
+}
+
+/*
+blue rgb(102,217,239)
+red rgb(249, 38, 89)
+green rgb(166, 220, 41)
+grey rgb(39, 40, 34)
+orange rgb(253, 151, 31)
+yellow rgb(200, 219, 116)
+*/
+h1 {
+    color: rgb(102,217,239);
+}
+h2 {
+    color: rgb(166, 220, 41);
+}
+h3 {
+    color: rgb(249, 38, 89);
+}
+p {
+    color: rgb(206, 190, 88);
+}
+a {
+    color: rgb(253, 151, 31);
+}
