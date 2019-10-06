@@ -3,7 +3,6 @@ function onAwake() {
     if(/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         isMobile = true;
         document.getElementById("sections").style.margin = "0% 5%";
-
     }
 }
 /*
@@ -17,7 +16,12 @@ function scrollFunction() {
     }   
 }
 window.onscroll = function() {scrollFunction()}; */
-
+function ifMobile() {
+    if (isMobile) {
+        document.getElementById("resume").style.cssFloat = "left";
+    }
+}
 
 
 onAwake();
+ifMobile()
