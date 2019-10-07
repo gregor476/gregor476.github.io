@@ -47,7 +47,6 @@ nav {
 }
 #sections {
     margin: auto;
-    width: 50vw;
     min-width: 600px;
     max-width: 600px;
 }
@@ -75,9 +74,7 @@ nav {
 
     font-size: 24px;
     font-weight: bolder;
-    padding: 24px 12px;
-    
-    
+    padding: 24px 12px; 
 }
 .button:hover {
     background-color: rgb(133, 216, 233);
@@ -85,10 +82,15 @@ nav {
 }
 
 #aboutbuttons {
-    display: block;
-    list-style-type: none;
     margin: 0;
     padding: 0; 
+}
+#aboutbuttons li {
+    display: inline-block;
+    
+}
+#aboutbuttons a {
+    display: inline-block;
 }
 .lihorz {
     padding-left: 5%;
@@ -102,16 +104,12 @@ nav {
     margin-bottom: 5%;
 }
 #resume {
-    vertical-align: bottom;
     padding-top: 30px;
-    height: 32px;
+    height: 34px;
 }
-
-
 #githubimg, #linkedinimg {
     max-width: 100%;
     max-height: 100%;
-
 }
 .section {
     padding-top: 10%;
