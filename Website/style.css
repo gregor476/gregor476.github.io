@@ -45,6 +45,10 @@ nav {
     padding: 0;
     background-color: rgb(53, 53, 43);
 }
+#startscreen {
+    width: 100%;
+    height: 100%;
+}
 #sections {
     margin: auto;
     min-width: 600px;
