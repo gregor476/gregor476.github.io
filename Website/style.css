@@ -49,7 +49,7 @@ a {
 #startscreen {
     position: relative;
     text-align: center;
-    border-bottom: 1px groove white;
+    border-bottom: 1px groove rgb(166, 220, 41);;
 }
 #blurback {
     width: 100%;
@@ -75,7 +75,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -500%);
-    font-size: 4vw;
+    font-size: calc(12px + 3vw);
 
     color: rgb(169, 120, 227);
 }
@@ -84,24 +84,25 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -100%);
-    font-size: 10vw;
+    font-size: calc(36px + 6vw);
 }
 #topemail {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 100%);
-    font-size: 1vw;
+
+    font-size: calc(16px + 1vw);
 
     display: block;
     border: none;
     background-color: rgb(65, 213, 243);
-    border-radius: 1vw;
+    border-radius: calc(8px + 1vw);
     text-align: center;
     overflow-y:hidden;
-    font-size: 2vw;
+    font-size: calc(16px + 1vw);
     font-weight: bolder;
-    padding: 2vw 1vw; 
+    padding: calc(16px + 1vw) calc(8px + 1vw); 
 }
 .button {
     display: block;
