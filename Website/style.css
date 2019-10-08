@@ -6,15 +6,16 @@
 body {
     margin: auto;
     padding: 0px;
-    background-color: rgb(39, 40, 34);
+    background-color: rgb(34, 36, 28);
     padding-bottom: 20%;
 }
 
-/*
+/* COLORS
 blue rgb(65, 213, 243)
 red rgb(249, 38, 89)
 green rgb(166, 220, 41)
 grey rgb(39, 40, 34)
+dark grey rgb(34, 36, 28)
 light grey rgb(53, 53, 43);
 orange rgb(253, 151, 31)
 yellow rgb(200, 219, 116)
@@ -43,17 +44,12 @@ p {
 }
 a {
     text-decoration: none;
-    color: rgb(53, 53, 43);
-}
-nav {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(53, 53, 43);
+    color: rgb(34, 36, 28);
 }
 #startscreen {
     position: relative;
     text-align: center;
-    color: red
+    border-bottom: 1px groove white;
 }
 #blurback {
     width: 100%;
@@ -89,6 +85,23 @@ nav {
     left: 50%;
     transform: translate(-50%, -100%);
     font-size: 10vw;
+}
+#topemail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    font-size: 1vw;
+
+    display: block;
+    border: none;
+    background-color: rgb(65, 213, 243);
+    border-radius: 1vw;
+    text-align: center;
+    overflow-y:hidden;
+    font-size: 2vw;
+    font-weight: bolder;
+    padding: 2vw 1vw; 
 }
 .button {
     display: block;
