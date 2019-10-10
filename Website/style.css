@@ -46,6 +46,14 @@ a {
     text-decoration: none;
     color: rgb(34, 36, 28);
 }
+footer {
+    padding-top: 20%;
+    text-align: center;
+}
+small {
+
+    color: white;
+}
 #startscreen {
     position: relative;
     text-align: center;

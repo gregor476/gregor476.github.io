@@ -1,7 +1,7 @@
 var isMobile = false;
-
 //When App opens Detect if mobile
 function onAwake() {
+    page.currentYear = date.getFullYear();
     onResize();
     if(/Android|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         isMobile = true;
