@@ -3,8 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: hidden;
-    background:rgb(102, 80, 255)
+    overflow: -moz-hidden-unscrollable;
 }
 body {
     height: 100vh;
@@ -14,7 +13,6 @@ body {
     align-items: center;
     background: linear-gradient(rgb(1, 80, 133) , rgb(102, 80, 255));
     color: white;
-    position: fixed;
 }
 .text {
     margin-left: 2%;
