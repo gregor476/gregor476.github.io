@@ -5,6 +5,8 @@
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow-x:hidden;
     overflow-y:hidden;
+    overflow: hidden;
+    position:fixed;
 }
 body {
     height: 100vh;
