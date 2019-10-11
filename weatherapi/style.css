@@ -16,5 +16,5 @@ body {
 .text {
     margin-left: 2%;
     float: left;
-    font-size: calc(32px + 10vw);
+    font-size: calc(26px + 10vw);
 }
