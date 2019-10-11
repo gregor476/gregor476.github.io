@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 body {
     height: 100vh;
