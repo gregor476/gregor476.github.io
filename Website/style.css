@@ -161,6 +161,7 @@ small {
     max-height: 100%;
 }
 .section {
+    
     padding-top: 10%;
 }
 .linked {
@@ -171,22 +172,18 @@ small {
     color: rgb(132, 235, 255);
 }
 .gridspot {
-    align-items: center;
-    display: grid;
-    grid-column-gap: 4%;
-    grid-row-gap: 8%;
-    grid-template-columns: 20% 20% 20%;
-    
-    margin: 0 auto;
-    width: 80vw;
-    height: 40vw;
-    font-size: 1rem;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .gridbox {
-
-    position: relative;
-    background-color: rgb(53, 53, 43);
+    
+    flex: 0 1 28%;
+    margin: 2px;
+    padding: 20px;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    background-color: grey;
 }
 .gridbox:after {
     content: "";
