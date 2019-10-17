@@ -6,10 +6,10 @@
 body {
     margin: auto;
     padding: 0px;
-    background-color: rgb(34, 36, 28);
+    background-color: white;
     padding-bottom: 20%;
 }
-
+/**/
 /* COLORS
 blue rgb(65, 213, 243)
 red rgb(249, 38, 89)
@@ -37,9 +37,14 @@ h3 {
     color: rgb(253, 151, 31);
     text-shadow: 2px 2px black;
 }
+h4 {
+    font-size: 150%;
+    color: rgb(249, 38, 89);
+    text-shadow: 2px 2px black;
+}
 p {
     font-size: 150%;
-    color: rgb(206, 190, 88);
+    color: black;
     text-shadow: 2px 2px black;
 }
 a {
@@ -51,9 +56,9 @@ footer {
     text-align: center;
 }
 small {
-
     color: white;
 }
+/*Start*/
 #startscreen {
     position: relative;
     text-align: center;
@@ -71,12 +76,6 @@ small {
     margin: auto;
     min-width: 600px;
     max-width: 600px;
-}
-#navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 #greet {
     position: absolute;
@@ -112,6 +111,7 @@ small {
     font-weight: bolder;
     padding: calc(16px + 1vw) calc(8px + 1vw); 
 }
+/*Buttons*/
 .button {
     display: block;
     border: none;
@@ -128,10 +128,10 @@ small {
     background-color: rgb(132, 235, 255);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
+/*Greeting Buttons*/
 #aboutbuttons {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     
 }
 #aboutbuttons li {
@@ -164,6 +164,7 @@ small {
     
     padding-top: 10%;
 }
+/*Hyperlinks*/
 .linked {
     color: rgb(65, 213, 243);
     text-decoration: underline;
@@ -171,7 +172,9 @@ small {
 .linked:hover {
     color: rgb(132, 235, 255);
 }
+/*Project Grid*/
 .gridspot {
+<<<<<<< Updated upstream
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -184,15 +187,39 @@ small {
     border: 1px solid #dadada;
     border-radius: 2px;
     background-color: grey;
+=======
+    align-items: center;
+    display: inline-flex;
+    
 }
-.gridbox:after {
-    content: "";
-    float:left;
-    display: block;
-    padding-top: 100%;
+.gridbox {
+    background-color: rgb(39, 41, 34);
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(65, 213, 243);
+    width: 300px;
 }
-.projectname {
-    font-size: 16px;
+.gridbox:hover {
+    background-color: rgb(87, 87, 87);
+    border-width: 3px;
+    border-color: rgb(132, 235, 255);
+}
+.gridimg {
+    padding-top: 5px;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+>>>>>>> Stashed changes
+}
+.gitlink {
+    width: 75px;
+    height: 30px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+.projecthead {
+    padding-left: 8px;
 }
 .mail {
     margin-left: auto;
