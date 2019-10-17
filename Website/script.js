@@ -1,7 +1,8 @@
 var isMobile = false;
+var navbar= document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 //When App opens Detect if mobile
 function onAwake() {
-    page.currentYear = date.getFullYear();
     onResize();
     if(/Android|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         isMobile = true;
@@ -19,5 +20,13 @@ function onResize(){
     }
     
 }
+function stick() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+}
 window.addEventListener("resize", onResize);
+window.onscroll = stick();
 onAwake();
