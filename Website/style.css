@@ -24,23 +24,22 @@ purple rgb(169, 120, 227)
 
 h1 {
     color: white;
-
 }
 h2 {
     font-size: 200%;
     font-style: italic;
-    color: rgb(149, 194, 44);
+    color: black;
     font-weight: bold;
 
 }
 h3 {
     font-size: 200%;
-    color: rgb(253, 151, 31);
+    color: black;
 
 }
 h4 {
     font-size: 150%;
-    color: rgb(249, 38, 89);
+    color: black;
 
 }
 p {
@@ -57,7 +56,7 @@ footer {
     text-align: center;
 }
 small {
-    color: white;
+    color: black;
 }
 /*Start*/
 #startscreen {
@@ -104,7 +103,7 @@ small {
 /*Navbar*/
 
 ul#navbar {
-
+    top: 0%;
     
     list-style-type: none;
     margin: 0;
@@ -129,7 +128,6 @@ li.navitem a {
 
 /* Change the link color to #111 (black) on hover */
 li.navitem a:hover {
-    font-weight: bold;
     color: black;
     background-color: white;
 }
@@ -159,7 +157,6 @@ li.navitem a:hover {
 .button:hover {
     background-color: rgb(65, 213, 243);
     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
-    font-weight: bolder;
 }
 #sections {
     margin: auto;
@@ -168,13 +165,14 @@ li.navitem a:hover {
 }
 /*Greeting Buttons*/
 #aboutbuttons {
+    list-style-type: none;
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    overflow: hidden;
+    
 }
-#aboutbuttons {
-    display: inline;
-}
-li.lihorz {
+.lihorz {
+    display: inline-block;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -194,7 +192,6 @@ li.lihorz {
     max-height: 100%;
 }
 .section {
-    
     padding-top: 10%;
 }
 /*Hyperlinks*/
@@ -203,7 +200,7 @@ li.lihorz {
     text-decoration: underline;
 }
 .linked:hover {
-    color: rgb(132, 235, 255);
+    color: rgb(1, 152, 182);
 }
 /*Project Grid*/
 .gridspot {
@@ -212,16 +209,17 @@ li.lihorz {
     justify-content: center;
 }
 .gridbox {
-    background-color: rgb(39, 41, 34);
+    background-color: transparent;
     border-style: solid;
-    border-width: 3px;
-    border-color: rgb(65, 213, 243);
+    border: 2px solid rgb(65, 213, 243);
+    border-radius: 10px;
     width: 300px;
+
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
 }
 .gridbox:hover {
-    background-color: rgb(87, 87, 87);
-    border-width: 3px;
-    border-color: rgb(132, 235, 255);
+    background-color: rgb(65, 213, 243);
 }
 .gridimg {
     padding-top: 5px;

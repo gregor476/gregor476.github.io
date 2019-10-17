@@ -22,11 +22,12 @@ function onResize(){
 }
 function stick() {
     if (window.pageYOffset >= sticky) {
+        console.log("STICK");
         navbar.classList.add("sticky")
       } else {
         navbar.classList.remove("sticky");
       }
 }
 window.addEventListener("resize", onResize);
-window.onscroll = stick();
+window.onscroll = function() {stick()};
 onAwake();
