@@ -8,6 +8,7 @@
     <!--Uses these Files-->
     <link rel="icon" href="../Logo.png">
     <link rel="stylesheet" type="text/css" href="../style.css" media="screen">
+    <link rel="stylesheet" href="https://use.typekit.net/opx5ulz.css">
     <script src="../script.js" charset="utf-8" defer></script>
 </head>
 
@@ -16,11 +17,18 @@
         <img id="blurback" src="../codeblur.png">
         <p id="greet">Hello, I'm</p>
         <h1 id="myname">Gregory Blood</h1>
-        <a id = "topemail"
-        href="#contact">Contact</a> 
+        <a class="mail button" id="topemail"
+        href="mailto: gregoryblood1998@gmail.com?subject=[FromTheWebsite] Enter Your Subject">Contact</a>
     </header>
+    <nav>
+        <ul id="navbar">
+            <li class="navitem"><a href="#about">About</a></li>
+            <li class="navitem"><a href="#projects">Projects</a></li>
+            <li class="navitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <main id="sections">
-        <div class="section">
+        <div class="section" id="about">
             <h2>"Aspiring Code Slinger"</h2>
             <p>
                 I am a computer science student 
@@ -32,31 +40,42 @@
                 I'm eager to work with teams to solve a given problem and I am excited 
                 to be able to express my mixture of creativity and efficiency.
             </p>
-            <ul id="aboutbuttons">
-                <li class="lihorz">
-                    <a id="resume" class="button" href="../resume.pdf" target="_blank">Resumé</a>
-                </li>
-                <li class="lihorz">
+            <div id="aboutbuttons">
+                <div class="lihorz">
+                    <a id="resume" class="button" href="../resume.pdf" target="_blank">Resumé</a><br>
+                </div>
+                <div class="lihorz">
                     <a id="githubbut" class="button" href="https://github.com/gregoryblood" target="_blank">
-                        <img id="githubimg" src="https://github.githubassets.com/pinned-octocat.svg">
-                    </a>
-                </li>
-                <li class="lihorz">
+                        <img class="githubimg" src="https://github.githubassets.com/pinned-octocat.svg">
+                    </a><br>
+                </div>
+                <div class="lihorz">
                     <a id="linkedinbut" class="button" href="https://www.linkedin.com/in/gregory-blood" target="_blank">
                         <img id="linkedinimg" src="https://static-exp1.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca">
-                    </a>
-                </li>
-            </ul>
+                    </a><br>
+                </div>
+                
+            </div>
+            
         </div>
-        <div class="section">
+        <div class="section" id="projects">
             <h3>Projects</h3>
+            <div class="gridspot">
+                <div class="gridbox">
+                    <a class="projecthead button"  href="https://gregoryblood.github.io/weatherapi/" target="_blank">
+                        WhatToWear
+                    </a>
+                    <img class="gridimg" src="../whattowear.png">
+                    <a class="gitlink button" href="https://github.com/gregoryblood/gregoryblood.github.io/tree/master/weatherapi" target="_blank">
+                        <img class="githubimg" src="https://github.githubassets.com/pinned-octocat.svg">
+                    </a>
+                </div>
+                
+                
+            </div>
 
-
-            <p>I am working on an updated version of this secition so please check back later</p>
-            <br><p>
-                    But here is a link to my most recent API project: 
-                    <a class="linked"  href="https://gregoryblood.github.io/weatherapi/"  target="_blank">WhatToWear</a>
-                </p>
+            <p>I am working on an updated version of this secition with better
+                visuals and more of my projects. So please check back later.</p>
         </div>
         <div class="section" id="contact">
             <h3>Let's Talk!</h3> 
@@ -66,7 +85,7 @@
                 </p><br>
                 <a class="mail button"
                 href="mailto: gregoryblood1998@gmail.com?subject=[FromTheWebsite] Enter Your Subject">E-Mail</a> 
-
+                <br><br>
         </div>    
     </main>
     <footer>

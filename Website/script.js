@@ -1,4 +1,6 @@
 var isMobile = false;
+var navbar= document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 //When App opens Detect if mobile
 function onAwake() {
     onResize();
@@ -18,5 +20,14 @@ function onResize(){
     }
     
 }
+function stick() {
+    if (window.pageYOffset >= sticky) {
+        console.log("STICK");
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+}
 window.addEventListener("resize", onResize);
+window.onscroll = function() {stick()};
 onAwake();
