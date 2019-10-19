@@ -12,6 +12,7 @@ function onAwake() {
 }
 
 function onResize(){
+    var sticky = navbar.offsetTop;
     if (window.innerWidth <= 630) {
         document.getElementById("sections").style.minWidth = "0px";
     }
@@ -20,14 +21,15 @@ function onResize(){
     }
     
 }
-function stick() {
+
+window.addEventListener("resize", onResize);
+window.onscroll = function() {
     if (window.pageYOffset >= sticky) {
         console.log("STICK");
         navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-}
-window.addEventListener("resize", onResize);
-window.onscroll = function() {stick()};
+    } 
+    else {
+    navbar.classList.remove("sticky");
+    }
+};
 onAwake();

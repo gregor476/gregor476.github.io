@@ -49,11 +49,13 @@ footer {
 small {
     color: black;
 }
+
 /*Start*/
 #startscreen {
-    text-align: center;
-    
+    text-align: center;  
+    font-size: 0; /*getting rid of white bar*/
 }
+
 #blurback {
     width: 100%;
     height: 100vh; 
@@ -78,11 +80,7 @@ small {
     font-size: 24px;
 
 }
-#topemail:hover, #topemail:active {
-    color: black;
-}
 /*Navbar*/
-
 ul#navbar {
     list-style-type: none;
     margin: 0;
@@ -106,23 +104,18 @@ li.navitem a {
     color: white;
     font-size: 20px; 
 }
-
-/* Change the link color to #111 (black) on hover */
-li.navitem a:hover, li.navitem a:active {
-    color: black;
-    background-color: white;
-}
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
+
 /*Buttons*/
 .button {
     display: block;
 
-
+    
     padding: 24px 12px;
     border: 4px solid;
     border-color: rgb(0, 195, 255);
@@ -136,10 +129,7 @@ li.navitem a:hover, li.navitem a:active {
     transition-duration: 0.8s;
     -webkit-transition-duration: 0.8s;
 }
-.button:hover, .button:active {
-    background-color: rgb(0, 195, 255);
-    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
-}
+
 #sections {
     margin: auto;
     min-width: 650px;
@@ -184,9 +174,7 @@ li.navitem a:hover, li.navitem a:active {
     color: rgb(0, 195, 255);
     text-decoration: underline;
 }
-.linked:hover, .linked:active {
-    color: rgb(0, 87, 114);
-}
+
 /*Project Grid*/
 .cardarea {
     list-style-type: none;
@@ -206,9 +194,7 @@ li.navitem a:hover, li.navitem a:active {
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
 }
-.card:hover, .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-}
+
 
 .cardimg {
     border-radius: 5px;
@@ -227,11 +213,34 @@ li.navitem a:hover, li.navitem a:active {
 
     margin-bottom: 3px;
 }
-
-
 .mail {
     margin-left: auto;
     margin-right: auto;
     width: 120px;
+}
+
+/*Hover Animations*/
+@media (hover: hover) { 
+    li.navitem a:hover {
+      background: white;
+      color: black;
+    }
+    .button:hover {
+        background-color: rgb(0, 195, 255);
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+    }
+    #topemail:hover {
+        color: black;
+    }
+    .linked:hover {
+        color: rgb(0, 87, 114);
+    }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    }
+    #darkbutton:hover {
+        background-color: black;
+        color: white;
+    }
 }
 
