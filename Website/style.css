@@ -34,6 +34,7 @@ h4 {
 
 }
 p {
+    text-align: center;
     font-size: 150%;
     color: black;
 }
@@ -77,7 +78,7 @@ small {
     font-size: 24px;
 
 }
-#topemail:hover {
+#topemail:hover, #topemail:active {
     color: black;
 }
 /*Navbar*/
@@ -99,15 +100,15 @@ li.navitem a {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    transition-duration: 0.6s;
-    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
 
     color: white;
     font-size: 20px; 
 }
 
 /* Change the link color to #111 (black) on hover */
-li.navitem a:hover {
+li.navitem a:hover, li.navitem a:active {
     color: black;
     background-color: white;
 }
@@ -132,10 +133,10 @@ li.navitem a:hover {
     font-size: 24px;
     font-weight: bold;
      
-    transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
 }
-.button:hover {
+.button:hover, .button:active {
     background-color: rgb(0, 195, 255);
     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
 }
@@ -146,11 +147,11 @@ li.navitem a:hover {
 }
 /*Greeting Buttons*/
 #aboutbuttons {
-    
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    text-align: center;
     
 }
 .lihorz {
@@ -169,7 +170,8 @@ li.navitem a:hover {
     padding-top: 26px;
     height: 38px;
 }
-.githubimg, #linkedinimg {
+
+.githubimg, #linkedinimg, .hyperimg {
     max-width: 100%;
     max-height: 100%;
 }
@@ -182,41 +184,50 @@ li.navitem a:hover {
     color: rgb(0, 195, 255);
     text-decoration: underline;
 }
-.linked:hover {
+.linked:hover, .linked:active {
     color: rgb(0, 87, 114);
 }
 /*Project Grid*/
-.gridspot {
-    display: inline-grid;
-    grid-template-rows: 325px;
-    grid-template-columns: 300px;
-    grid-gap: 6px;
+.cardarea {
+    list-style-type: none;
+    text-align: center;
+    
 }
-.gridbox {
-    border-style: solid;
-    border: 4px solid black;
-    border-radius: 10px;
+.card {
+    display: inline-block;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    border-radius: 5px;
+
+    width: 45%;
+    min-width: 250px;
+
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
 }
-.projecthead {
-    width: 150px;
-    height: 30px; 
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3px;
+.card:hover, .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
-.gridimg {
-    padding-top: 5px;
-    object-fit: cover;
+
+.cardimg {
+    border-radius: 5px;
     width: 100%;
-    max-height: 100%;
-}
-.gitlink {
-    width: 75px;
-    height: 30px; 
     margin-left: auto;
     margin-right: auto;
+}
+.cardbutton {
+    list-style-type: none;
+    text-align: center;
+}
+.gitlink, .hyperlink {
+    display: inline-block;
+    width: 75px;
+    height: 40px;
+
     margin-bottom: 3px;
 }
+
 
 .mail {
     margin-left: auto;
