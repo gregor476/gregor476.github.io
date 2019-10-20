@@ -26,7 +26,7 @@ window.addEventListener("resize", onResize);
 window.onscroll = function() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
-        document.getElementById("sections").style.marginTop = "65px";
+        document.getElementById("sections").style.marginTop = "55px";
     } 
     else {
     navbar.classList.remove("sticky");
