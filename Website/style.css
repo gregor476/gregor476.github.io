@@ -110,7 +110,11 @@ li.navitem a {
     width: 100%;
 }
 
-
+/*Hyperlinks*/
+.linked {
+    color: rgb(0, 195, 255);
+    text-decoration: underline;
+}
 /*Buttons*/
 .button {
     display: block;
@@ -132,8 +136,13 @@ li.navitem a {
 #sections {
     margin: auto;
     
+    
     min-width: 650px;
     max-width: 650px;
+}
+.section {
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 /*Greeting Buttons*/
 #aboutbuttons {
@@ -165,16 +174,6 @@ li.navitem a {
     max-width: 100%;
     max-height: 100%;
 }
-.section {
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-/*Hyperlinks*/
-.linked {
-    color: rgb(0, 195, 255);
-    text-decoration: underline;
-}
-
 /*Project Grid*/
 .cardarea {
     list-style-type: none;
