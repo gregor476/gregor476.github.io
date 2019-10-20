@@ -1,6 +1,7 @@
 var isMobile = false;
 var navbar= document.getElementById("navbar");
 var sticky = navbar.offsetTop;
+var darkmode = false;
 //When App opens Detect if mobile
 function onAwake() {
     onResize();
@@ -12,7 +13,6 @@ function onAwake() {
 }
 
 function onResize(){
-    var sticky = navbar.offsetTop;
     if (window.innerWidth <= 630) {
         document.getElementById("sections").style.minWidth = "0px";
     }
@@ -25,11 +25,12 @@ function onResize(){
 window.addEventListener("resize", onResize);
 window.onscroll = function() {
     if (window.pageYOffset >= sticky) {
-        console.log("STICK");
         navbar.classList.add("sticky")
+        document.getElementById("sections").style.marginTop = "65px";
     } 
     else {
     navbar.classList.remove("sticky");
+        document.getElementById("sections").style.marginTop = "auto";
     }
 };
 onAwake();
