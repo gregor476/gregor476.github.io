@@ -1,0 +1,170 @@
+* {
+    font-family: pt-sans, sans-serif;
+    /*font-family: -apple-system, BlinkMacSystemFont, sans-serif;*/
+    overflow-x:hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: auto;
+    padding: 0px;
+    background-color: white;
+    padding-bottom: 20%;
+}
+h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 75px;
+    text-align: center;
+}
+h2 {
+    font-size: 200%;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+
+}
+h3 {
+    font-size: 200%;
+    color: black;
+
+}
+h4 {
+    font-size: 150%;
+    color: black;
+
+}
+p {
+    text-align: center;
+    font-size: 150%;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: rgb(34, 36, 28);
+}
+footer {
+    padding-top: 20%;
+    text-align: center;
+}
+small {
+    color: black;
+}
+
+/*Navbar*/
+ul#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    text-align:center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+} 
+li.navitem {
+    display:inline;
+}
+li.navitem a {
+    float: left;
+    margin-bottom: -4px;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+
+    color: white;
+    font-size: 20px; 
+}
+#name {
+    padding-top: 40px;
+}
+
+#core {
+    margin: auto;
+    
+    min-width: 650px;
+    max-width: 650px;
+}
+.section {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#githubbut{
+    width: 100px;
+    height: 40px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+
+.githubimg{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.gitlink{
+    display: inline-block;
+    width: 75px;
+    height: 40px;
+
+    margin-bottom: 3px;
+}
+
+
+
+/*Hyperlinks*/
+.linked {
+    color: rgb(0, 195, 255);
+    text-decoration: underline;
+}
+/*Buttons*/
+.button {
+    display: block;
+
+    padding: 24px 12px;
+    border: 4px solid;
+    border-color: rgb(0, 195, 255);
+    border-radius: 12px;
+    overflow-y: hidden;
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+     
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+}
+/*Hover Animations*/
+@media (hover: hover) { 
+    li.navitem a:hover {
+      background: white;
+      color: black;
+    }
+    .button:hover {
+        background-color: rgb(0, 195, 255);
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+    }
+    #topemail:hover {
+        color: black;
+    }
+    .linked:hover {
+        color: rgb(0, 87, 114);
+    }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    }
+    #darkbutton:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
