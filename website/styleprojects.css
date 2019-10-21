@@ -124,7 +124,8 @@ li.navitem a {
 
 
 /*Hyperlinks*/
-.linked {
+.link {
+    font-size: 72px;
     color: rgb(0, 195, 255);
     text-decoration: underline;
 }
