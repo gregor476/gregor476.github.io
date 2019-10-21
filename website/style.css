@@ -178,8 +178,7 @@ li.navitem a {
 /*Project Grid*/
 .cardarea {
     list-style-type: none;
-    text-align: center;
-    
+    text-align: center
 }
 .card {
     display: inline-block;
@@ -199,6 +198,7 @@ li.navitem a {
 .cardimg {
     border-radius: 5px;
     width: 100%;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
 }

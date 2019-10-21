@@ -27,7 +27,8 @@ h2 {
 
 }
 h3 {
-    font-size: 200%;
+    font-size: 150%;
+    text-align: center;
     color: black;
 
 }
@@ -118,7 +119,9 @@ li.navitem a {
 
     margin-bottom: 3px;
 }
-
+.youtube {
+    margin: auto;
+}
 
 
 /*Hyperlinks*/
