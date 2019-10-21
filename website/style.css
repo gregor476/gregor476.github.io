@@ -192,8 +192,6 @@ li.navitem a {
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
 }
-
-
 .cardimg {
     border-radius: 5px;
     width: 100%;
@@ -206,12 +204,17 @@ li.navitem a {
     text-align: center;
     
 }
+
 .gitlink, .hyperlink {
     display: inline-block;
     width: 75px;
     height: 40px;
 
     margin-bottom: 3px;
+}
+.more {
+    padding-top: 28px;
+    height: 36px;
 }
 .mail {
     margin-left: auto;
