@@ -166,8 +166,7 @@ li.navitem a {
     margin-bottom: 5%;
 }
 #resume {
-    padding-top: 26px;
-    height: 38px;
+    line-height: 40px;
 }
 
 .githubimg, #linkedinimg, .hyperimg {
@@ -202,19 +201,17 @@ li.navitem a {
 .cardbutton {
     list-style-type: none;
     text-align: center;
-    
-}
 
+}
 .gitlink, .hyperlink {
     display: inline-block;
-    width: 25%;
+    width: 75px;
     height: 40px;
 
     margin-bottom: 3px;
 }
 .more {
-    padding-top: 28px;
-    height: 36px;
+    line-height: 40px;
 }
 .mail {
     margin-left: auto;
