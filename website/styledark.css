@@ -9,7 +9,7 @@ html {
 body {
     margin: auto;
     padding: 0px;
-    background-color: white;
+    background-color: black;
     padding-bottom: 20%;
 }
 h1 {
@@ -18,14 +18,14 @@ h1 {
 h2 {
     font-size: 200%;
     font-style: italic;
-    color: black;
+    color: white;
     font-weight: bold;
 
 
 }
 h3 {
     font-size: 200%;
-    color: black;
+    color: white;
 
 }
 h4 {
@@ -35,18 +35,18 @@ h4 {
 }
 p {
     font-size: 150%;
-    color: black;
+    color: white;
 }
 a {
     text-decoration: none;
-    color: rgb(34, 36, 28);
+    color: white;
 }
 footer {
     padding-top: 20%;
     text-align: center;
 }
 small {
-    color: black;
+    color: white;
 }
 
 /*Start*/
@@ -85,9 +85,9 @@ ul#navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: white;
     text-align:center;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.6);
 } 
 li.navitem {
     display:inline;
@@ -101,7 +101,7 @@ li.navitem a {
     transition-duration: 0.8s;
     -webkit-transition-duration: 0.8s;
 
-    color: white;
+    color: black;
     font-size: 20px; 
 }
 .sticky {
@@ -181,8 +181,9 @@ li.navitem a {
 }
 .card {
     display: inline-block;
+
     margin: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.4);
     transition: 0.3s;
     border-radius: 5px;
 
@@ -225,11 +226,12 @@ li.navitem a {
 /*Hover Animations*/
 @media (hover: hover) { 
     li.navitem a:hover {
-      background: white;
-      color: black;
+      background: black;
+      color: white;
     }
     .button:hover {
         background-color: rgb(0, 195, 255);
+        color: black;
         box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
     }
     #topemail:hover {
@@ -239,11 +241,8 @@ li.navitem a {
         color: rgb(0, 87, 114);
     }
     .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.4);
     }
-    #darkbutton:hover {
-        background-color: black;
-        color: white;
-    }
+
 }
 
