@@ -5,6 +5,7 @@ var darkmode = false;
 //Darkmode
 document.getElementById("darkbutton").onclick = function() {
     if (darkmode == false) {
+        darkmode = true;
         document.getElementById("pagestyle").setAttribute("href", "../styledark.css");
         document.getElementById("darkbutton").innerHTML = "Light Mode";
         var arr = document.getElementsByClassName("githubimg");
@@ -13,8 +14,8 @@ document.getElementById("darkbutton").onclick = function() {
             arr[i].setAttribute("src", "https://www.sccpre.cat/mypng/full/85-853569_github-icon-white-png.png");
     }
     else if (darkmode == true) {
-        document.getElementById("pagestyle").setAttribute("href", "../style.css");
         darkmode = false;
+        document.getElementById("pagestyle").setAttribute("href", "../style.css");
         document.getElementById("darkbutton").innerHTML = "Dark Mode";
         var arr = document.getElementsByClassName("githubimg");
         //replace git icon with one from github assets
