@@ -194,34 +194,47 @@ li.navitem a {
     margin: 2%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
-    border-radius: 5px;
-
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+    font-size: 0px;
     width: 45%;
     min-width: 250px;
 
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
+    
 }
 .cardimg {
-    border-radius: 5px;
+    border-bottom: solid;
+    border-bottom-width: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     width: 100%;
     height: 175px;
     margin-left: auto;
     margin-right: auto;
+    
+    
+}
+.site.cardimg {
+    border-color: blue;
+}
+.game.cardimg {
+    border-color: red;
 }
 .cardbutton {
+    
     list-style-type: none;
     text-align: center;
     
 }
 .gitlink, .hyperlink {
+    border-top: none;
     display: block;
     height: 32px;
     border-radius: 0px;
     
-}
-.hyperlink {
-    border-top: none;
 }
 
 .mail {
