@@ -2,6 +2,19 @@ var isMobile = false;
 var navbar= document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 var darkmode = false;
+//Darkmode
+document.getElementById("darkbutton").onclick = function() {
+    if (darkmode == false) {
+        document.getElementById("pagestyle").setAttribute("href", "../styledark.css");
+        document.getElementById("darkbutton").innerHTML = "Light Mode";
+        darkmode = true;
+    }
+    else if (darkmode == true) {
+        document.getElementById("pagestyle").setAttribute("href", "../style.css");
+        darkmode = false;
+        document.getElementById("darkbutton").innerHTML = "Dark Mode";
+    }
+}
 //When App opens Detect if mobile
 function onAwake() {
     onResize();
