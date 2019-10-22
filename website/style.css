@@ -215,15 +215,14 @@ li.navitem a {
     
 }
 .gitlink, .hyperlink {
+    display: -moz-inline-stack;
     display: inline-block;
     width: 75px;
     height: 32px;
 
     margin-bottom: 3px;
 }
-.more {
-    
-}
+
 .mail {
     margin-left: auto;
     margin-right: auto;
