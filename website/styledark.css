@@ -241,7 +241,7 @@ li.navitem a {
     }
     .button:hover {
         background-color: rgb(0, 186, 243);
-        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+        box-shadow: 0 8px 16px 0 rgba(0, 186, 243, 0.4), 0 8px 25px 0 rgba(0, 186, 243, 0.4);
     }
     .darkbutton:hover {
         background-color: white;
@@ -254,7 +254,7 @@ li.navitem a {
         color: rgb(0, 87, 114);
     }
     .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.4);
+        box-shadow: 0 8px 16px 0 rgba(0, 186, 243, 0.4);
     }
     #darkbutton:hover {
         background-color: white;
