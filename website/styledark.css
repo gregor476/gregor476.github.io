@@ -226,13 +226,14 @@ li.navitem a {
     
 }
 .gitlink, .hyperlink {
-    border-top: none;
+    
     display: block;
     height: 32px;
     border-radius: 0px;
     
 }
 .hyperlink {
+    border-top: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
