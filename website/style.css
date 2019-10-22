@@ -215,12 +215,13 @@ li.navitem a {
     
 }
 .gitlink, .hyperlink {
-    display: -moz-inline-stack;
-    display: inline-block;
-    width: 75px;
+    display: block;
     height: 32px;
-
-    margin-bottom: 3px;
+    border-radius: 0px;
+    
+}
+.hyperlink {
+    border-top: none;
 }
 
 .mail {
