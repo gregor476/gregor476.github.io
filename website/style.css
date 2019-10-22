@@ -208,8 +208,7 @@ li.navitem a {
     
 }
 .cardimg {
-    border-bottom: solid;
-    border-bottom-width: 15px;
+
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
@@ -219,25 +218,19 @@ li.navitem a {
     
     
 }
-.site.cardimg {
-    border-color: blue;
-}
-.game.cardimg {
-    border-color: red;
-}
+
 .cardbutton {
-    
     list-style-type: none;
     text-align: center;
-    
 }
 .gitlink, .hyperlink {
-    border-top: none;
+
     display: block;
     height: 32px;
     border-radius: 0px;
 }
 .hyperlink {
+    border-top: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
