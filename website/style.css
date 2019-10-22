@@ -216,14 +216,13 @@ li.navitem a {
 }
 .gitlink, .hyperlink {
     display: inline-block;
-    
     width: 75px;
-    height: 40px;
+    height: 32px;
 
     margin-bottom: 3px;
 }
 .more {
-    line-height: 40px;
+    
 }
 .mail {
     margin-left: auto;
