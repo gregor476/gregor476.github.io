@@ -19,17 +19,6 @@
             isMobile = true;
         }
         if(!isMobile)
-            function muteMe(elem) {
-                elem.muted = true;
-                elem.pause();
-            }
-
-            // Try to mute all video and audio elements on the page
-            function mutePage() {
-                var elems = document.querySelectorAll("audio");
-                [].forEach.call(elems, function(elem) { muteMe(elem); });
-            }
-            document.write("");
             UnityLoader.instantiate("unityContainer", "Build/WebGL.json"); 
     </script>
 </head>
