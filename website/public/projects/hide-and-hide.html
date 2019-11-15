@@ -13,7 +13,13 @@
     <!--Games-->
     <script src="./Build/UnityLoader.js"></script>
     <script>
-      UnityLoader.instantiate("unityContainer", "Build/WebGL.json");
+        //From https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device
+        var isMobile = false;
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { 
+            isMobile = true;
+        }
+        if(!isMobile)
+            UnityLoader.instantiate("unityContainer", "Build/WebGL.json");
     </script>
 
 </head>
@@ -27,7 +33,7 @@
     <main id="core">
         <h1 id="name">Hide and Hide</h1>
         <p style="font-size: 18px">WASD - Move | Mouse to Look | R - Restart | Esc x2 - Pause | P - Quits | Refresh to reload</p>
-        <div id="unityContainer" style="width: 100%; height: 40vw;"></div>
+        <div id="unityContainer" style="width: 100%; height: 325px;"></div>
         <h2>Summary</h2>
         <p>
             This game is a maze horror game with the objective being to collect all five of the 
