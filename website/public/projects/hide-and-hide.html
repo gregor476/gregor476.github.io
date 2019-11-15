@@ -10,6 +10,11 @@
     <link rel="stylesheet" type="text/css" href="../../styleprojects.css" media="screen">
     <link rel="stylesheet" href="https://use.typekit.net/opx5ulz.css">
     <script src="../../scriptprojects.js" charset="utf-8" defer></script>
+    <!--Games-->
+    <script src="./Build/UnityLoader.js"></script>
+    <script>
+      UnityLoader.instantiate("unityContainer", "Build/WebGL.json");
+    </script>
 
 </head>
 
@@ -21,7 +26,8 @@
     </nav>
     <main id="core">
         <h1 id="name">Hide and Hide</h1>
-        
+        <p style="font-size: 18px">WASD - Move | Mouse to Look | R - Restart | Esc - Pause | P - Quits | Refresh to reload</p>
+        <div id="unityContainer" style="width: 960px; height: 600px;"></div>
         <h2>Summary</h2>
         <p>
             This game is a maze horror game with the objective being to collect all five of the 
