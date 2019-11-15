@@ -19,7 +19,17 @@
             isMobile = true;
         }
         if(!isMobile)
-            document.write("<p style=\"font-size: 18px\">WASD - Move | Mouse to Look | R - Restart | P - Quits | Refresh to reload<br>Esc to show mouse/pause</p>");
+            function muteMe(elem) {
+                elem.muted = true;
+                elem.pause();
+            }
+
+            // Try to mute all video and audio elements on the page
+            function mutePage() {
+                var elems = document.querySelectorAll("audio");
+                [].forEach.call(elems, function(elem) { muteMe(elem); });
+            }
+            document.write("");
             UnityLoader.instantiate("unityContainer", "Build/WebGL.json"); 
     </script>
 </head>
@@ -32,8 +42,9 @@
     </nav>
     <main id="core">
         <h1 id="name">Hide and Hide</h1>
-        
-        <div id="unityContainer" style="overflow: hidden; width: 100%; height: 340px;"></div>
+        <p style="font-weight: bold;">Controls:</p>
+        <p style="font-size: 18px">WASD - Move | Mouse to Look | R - Restart | P - Quits | Refresh to reload<br>Esc to show mouse/pause</p>
+        <div id="unityContainer" style="overflow: hidden; width: 100%; height: 400px;"></div>
         <h2>Summary</h2>
         <p>
             This game is a maze horror game with the objective being to collect all five of the 
