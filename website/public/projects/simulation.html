@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gregory Blood - Hide and Hide</title>
+    <!--Uses these Files-->
+    <link rel="icon" href="../../imgs/Logo.png">
+    <link rel="stylesheet" type="text/css" href="../../styleprojects.css" media="screen">
+    <link rel="stylesheet" href="https://use.typekit.net/opx5ulz.css">
+    <script src="../../scriptprojects.js" charset="utf-8" defer></script>
+    <!--Games-->
+    <script src="./Build/UnityLoader.js"></script>
+    <script>
+        //From https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device
+        var isMobile = false;
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { 
+            isMobile = true;
+        }
+        if(!isMobile)
+            UnityLoader.instantiate("unityContainer", "Build/WebGL.json"); 
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul id="navbar">
+            <li class="navitem"><a href="../index.html#projects">&lt Back</a></li>
+        </ul>
+    </nav>
+    <main id="core">
+        <h1 id="name">Nature Simulation<br>Work in Progress</h1>
+        <p style="font-weight: bold;">Controls:</p>
+        <p style="font-size: 18px">
+            Hold Right Click to look | WASD while Holding Right Click - Move | R - Restarts | Space - Quits | Refresh to reload
+            <br>Esc to end
+            <br>Warning: Poor performance with increasing numbers, especially on # of environments
+        </p>
+        <div id="unityContainer" style="z-index: -1; overflow: hidden; width: 100%; height: 400px;"></div>
+        <h2>Summary</h2>
+        <p>
+            
+        </p>
+
+    </main>
+    <footer>
+        <small>&copy;Copyright 2019, Gregory A. Blood</small>
+    </footer>
+</body>
+</html>
