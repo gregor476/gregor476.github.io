@@ -18,8 +18,8 @@
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { 
             isMobile = true;
         }
-        if(!isMobile)
-            UnityLoader.instantiate("unityContainer", "Build/WebGL.json"); 
+        //if(!isMobile)
+            //UnityLoader.instantiate("unityContainer", "Build/WebGL.json"); 
     </script>
 </head>
 
@@ -37,12 +37,33 @@
             <br>Esc to end
             <br>Warning: Poor performance with increasing numbers, especially on # of environments
         </p>
-        <div id="unityContainer" style="z-index: -1; overflow: hidden; width: 100%; height: 400px;"></div>
+        //<div id="unityContainer" style="z-index: -1; overflow: hidden; width: 100%; height: 400px;"></div>
         <h2>Summary</h2>
         <p>
-            
+            This is a current project I'm working on because I like feeling like a data collection 
+            god. The purpose of the simulation is to see how different factors affect species evolution. 
+            Each creature, or "Joups" as I call them, collect the closest food. Once they have enough 
+            energy, they reproduce, creating a child with similar stats. There's a chance the child will 
+            be a mutation and have completely different stats. <br>
+            Species live and die depending on how efficient they are. Their effieciency is based from their 
+            speed and size.<br>
         </p>
-
+        <h2>Efficiency</h2>
+        <p>
+            This was a hard calculation to find. I wanted the simulation to be similar to nature. Each joup 
+            loses 0.1 energy per second and gain 1 energy per food they eat. The faster a creature gets, 
+            the less efficient they should be with their energy that they get from food. 
+            In nature, this relation seems exponential so it began with energy loss per second = speed^2. 
+            Doing this with made two groupds of creatures, fast ones that were able to steal food from others, 
+            and incredibly slow ones that were very efficient. Less food placed per second in the 
+            environment benifited the faster joups as they could take more food from slower ones, causing the 
+            slow to starve out. <br>
+        </p>
+        <h2>Competition</h2>
+        <p>
+            Due to competition, the overall average speed increased, the less total creatures could survive. This 
+            is because overall, the creatures are less efficient with their food. 
+        </p>
     </main>
     <footer>
         <small>&copy;Copyright 2019, Gregory A. Blood</small>
