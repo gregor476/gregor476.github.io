@@ -9,7 +9,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgb(255, 238, 0) , rgb(0, 187, 25));
+    background: linear-gradient(rgb(255, 238, 0) , rgb(157, 255, 0));
     font-size: 40px;
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -18,4 +18,9 @@ body {
 .image {
     width: 100%;
     height: 100%;
+}
+#text {
+    text-align: center;
+    font-size: 10vw;
+    padding-bottom: 2px;
 }
