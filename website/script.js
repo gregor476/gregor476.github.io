@@ -9,9 +9,9 @@ document.getElementById("darkbutton").onclick = function() {
         document.getElementById("pagestyle").setAttribute("href", "../styledark.css");
         document.getElementById("darkbutton").innerHTML = "Light Mode";
         var arr = document.getElementsByClassName("githubimg");
-        //replace git icon with one from https://www.sccpre.cat/maxp/xiJiox/
+        //Replace Github Logos
         for (var i = 0; i < arr.length; i++)
-            arr[i].setAttribute("src", "https://www.sccpre.cat/mypng/full/85-853569_github-icon-white-png.png");
+            arr[i].setAttribute("src", "../imgs/gitwhite.png");
     }
     else if (darkmode == true) {
         darkmode = false;
