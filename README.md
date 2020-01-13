@@ -1,4 +1,3 @@
 # gregoryblood.github.io
-My Website: https://gregoryblood.github.io/website/public/
+My Website: https://gregoryblood.me
 <br>
-HessCoin: https://gregoryblood.github.io/hesscoin/public/
