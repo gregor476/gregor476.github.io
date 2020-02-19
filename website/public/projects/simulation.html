@@ -39,14 +39,10 @@
         </ul>
     </nav>
     <main id="core">
-        <h1 id="name">Nature Simulation<br>Work in Progress</h1>
-        <p style="font-weight: bold;">Controls:</p>
-        <p style="font-size: 18px">
-            Hold Right Click to look | WASD while Holding Right Click - Move | R - Restarts | Space - Quits | Refresh to reload
-            <br>Esc to end
-            <br>Warning: Poor performance with increasing numbers, especially on # of environments
-        </p>
-        //<div id="unityContainer" style="z-index: -1; overflow: hidden; width: 100%; height: 400px;"></div>
+        <h1 id="name">Nature Simulation</h1>
+        <h2>Work in Progress</h2>
+        <h3>Download either version under the Builds folder on Github</h3>
+        <!--<div id="unityContainer" style="z-index: -1; overflow: hidden; width: 100%; height: 400px;"></div> -->
         <h2>Summary</h2>
         <p>
             This is a current project I'm working on because I like feeling like a data collection 
@@ -54,7 +50,7 @@
             Each creature, or "Joups" as I call them, collect the closest food. Once they have enough 
             energy, they reproduce, creating a child with similar stats. There's a chance the child will 
             be a mutation and have completely different stats. <br>
-            Species live and die depending on how efficient they are. Their effieciency is based from their 
+            Species live and die depending on how efficient they are. Their efficiency is based on their 
             speed and size.<br>
         </p>
         <h2>Efficiency</h2>
@@ -63,15 +59,22 @@
             loses 0.1 energy per second and gain 1 energy per food they eat. The faster a creature gets, 
             the less efficient they should be with their energy that they get from food. 
             In nature, this relation seems exponential so it began with energy loss per second = speed^2. 
-            Doing this with made two groupds of creatures, fast ones that were able to steal food from others, 
+            Doing this with made two groups of creatures, fast ones that were able to steal food from others, 
             and incredibly slow ones that were very efficient. Less food placed per second in the 
-            environment benifited the faster joups as they could take more food from slower ones, causing the 
+            environment benefited the faster Joups as they could take more food from slower ones, causing the 
             slow to starve out. <br>
         </p>
         <h2>Competition</h2>
         <p>
             Due to competition, the overall average speed increased, the less total creatures could survive. This 
             is because overall, the creatures are less efficient with their food. 
+        </p>
+
+        <p style="font-weight: bold;">Controls:</p>
+        <p style="font-size: 18px">
+            Hold Right Click to look | WASD while Holding Right Click - Move | R - Restarts | Space - Quits | Refresh to reload
+            <br>Esc to end
+            <br>Warning: Poor performance with increasing numbers, especially on # of environments
         </p>
     </main>
     <footer>
