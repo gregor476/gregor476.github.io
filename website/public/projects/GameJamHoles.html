@@ -20,15 +20,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/opx5ulz.css">
     <script src="../../scriptprojects.js" charset="utf-8" defer></script>
     <!--Games-->
-    <script src="./Build_Holes/UnityLoader.js"></script>
     <script>
         //From https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device
         var isMobile = false;
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { 
             isMobile = true;
         }
-        if(!isMobile)
-            UnityLoader.instantiate("unityContainer", "Build_Holes/WebGL.json"); 
     </script>
 </head>
 
