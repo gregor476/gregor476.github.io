@@ -13,14 +13,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gregory Blood - Hide and Hide</title>
+    <title>Gregory Blood - Game Jame: Holes</title>
     <!--Uses these Files-->
     <link rel="icon" href="../../imgs/Logo.png">
     <link rel="stylesheet" type="text/css" href="../../styleprojects.css" media="screen">
     <link rel="stylesheet" href="https://use.typekit.net/opx5ulz.css">
     <script src="../../scriptprojects.js" charset="utf-8" defer></script>
     <!--Games-->
-    <script src="./Build_Holes/Build/UnityLoader.js"></script>
+    <script src="./Build_Holes/UnityLoader.js"></script>
     <script>
         //From https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device
         var isMobile = false;
@@ -28,7 +28,7 @@
             isMobile = true;
         }
         if(!isMobile)
-            UnityLoader.instantiate("unityContainer", "Build_Holes/Build/WebGL.json"); 
+            UnityLoader.instantiate("unityContainer", "Build_Holes/WebGL.json"); 
     </script>
 </head>
 
