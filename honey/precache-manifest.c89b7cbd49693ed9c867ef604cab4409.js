@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3249764db9b820c8777ea64bd19daf09",
+    "revision": "509ad44ab02142f1183648108967b619",
     "url": "/honey/index.html"
   },
   {
-    "revision": "780ec3415a4097812e0a",
+    "revision": "76543de14cc3bebd8459",
     "url": "/honey/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/honey/static/js/2.c02c4cc2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "780ec3415a4097812e0a",
-    "url": "/honey/static/js/main.f5c70bc7.chunk.js"
+    "revision": "76543de14cc3bebd8459",
+    "url": "/honey/static/js/main.ed0a0713.chunk.js"
   },
   {
     "revision": "e7fc75608dc7b1e8ccf2",
