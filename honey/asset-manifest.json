@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/honey/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/honey/static/js/main.b2b8bdca.chunk.js",
-    "main.js.map": "/honey/static/js/main.b2b8bdca.chunk.js.map",
+    "main.js": "/honey/static/js/main.8c13e2f6.chunk.js",
+    "main.js.map": "/honey/static/js/main.8c13e2f6.chunk.js.map",
     "runtime-main.js": "/honey/static/js/runtime-main.9e0dfc2a.js",
     "runtime-main.js.map": "/honey/static/js/runtime-main.9e0dfc2a.js.map",
     "static/js/2.c02c4cc2.chunk.js": "/honey/static/js/2.c02c4cc2.chunk.js",
     "static/js/2.c02c4cc2.chunk.js.map": "/honey/static/js/2.c02c4cc2.chunk.js.map",
     "index.html": "/honey/index.html",
-    "precache-manifest.cdb3298f6a2f77a1a97856aae63a8c0a.js": "/honey/precache-manifest.cdb3298f6a2f77a1a97856aae63a8c0a.js",
+    "precache-manifest.6001be87db21e24f1e935495d3d45d47.js": "/honey/precache-manifest.6001be87db21e24f1e935495d3d45d47.js",
     "service-worker.js": "/honey/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/honey/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.c02c4cc2.chunk.js.LICENSE.txt": "/honey/static/js/2.c02c4cc2.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.9e0dfc2a.js",
     "static/js/2.c02c4cc2.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.b2b8bdca.chunk.js"
+    "static/js/main.8c13e2f6.chunk.js"
   ]
 }
