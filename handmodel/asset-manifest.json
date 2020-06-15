@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f361e03.chunk.css",
-    "main.js": "/static/js/main.7067bd56.chunk.js",
-    "main.js.map": "/static/js/main.7067bd56.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ff01dd2d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ff01dd2d.js.map",
-    "static/js/2.6116b13a.chunk.js": "/static/js/2.6116b13a.chunk.js",
-    "static/js/2.6116b13a.chunk.js.map": "/static/js/2.6116b13a.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.a8a53f5439c533233e8b49268317f48b.js": "/precache-manifest.a8a53f5439c533233e8b49268317f48b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.6116b13a.chunk.js.LICENSE.txt": "/static/js/2.6116b13a.chunk.js.LICENSE.txt",
-    "static/media/img1.jpeg": "/static/media/img1.aad226de.jpeg"
+    "main.css": "/handmodel/static/css/main.5f361e03.chunk.css",
+    "main.js": "/handmodel/static/js/main.774a7426.chunk.js",
+    "main.js.map": "/handmodel/static/js/main.774a7426.chunk.js.map",
+    "runtime-main.js": "/handmodel/static/js/runtime-main.3d69bc4c.js",
+    "runtime-main.js.map": "/handmodel/static/js/runtime-main.3d69bc4c.js.map",
+    "static/js/2.2d4e3fc4.chunk.js": "/handmodel/static/js/2.2d4e3fc4.chunk.js",
+    "static/js/2.2d4e3fc4.chunk.js.map": "/handmodel/static/js/2.2d4e3fc4.chunk.js.map",
+    "index.html": "/handmodel/index.html",
+    "precache-manifest.f67ba6d4ae541e144dbcf80542003499.js": "/handmodel/precache-manifest.f67ba6d4ae541e144dbcf80542003499.js",
+    "service-worker.js": "/handmodel/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/handmodel/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.2d4e3fc4.chunk.js.LICENSE.txt": "/handmodel/static/js/2.2d4e3fc4.chunk.js.LICENSE.txt",
+    "static/media/img1.jpeg": "/handmodel/static/media/img1.00d797ac.jpeg",
+    "static/media/img2.jpeg": "/handmodel/static/media/img2.e4263330.jpeg",
+    "static/media/img3.jpeg": "/handmodel/static/media/img3.aad226de.jpeg",
+    "static/media/img4.jpeg": "/handmodel/static/media/img4.d7e43e0e.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ff01dd2d.js",
-    "static/js/2.6116b13a.chunk.js",
+    "static/js/runtime-main.3d69bc4c.js",
+    "static/js/2.2d4e3fc4.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.7067bd56.chunk.js"
+    "static/js/main.774a7426.chunk.js"
   ]
 }
