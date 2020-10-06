@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 const TitleDiv = styled.div `
   z-index: -1;
@@ -7,10 +7,11 @@ const TitleDiv = styled.div `
   color: white;
 
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: inline-block;
   font-weight: 400;
-  background-image: linear-gradient(to right bottom, #4fe8ff, #00caff, #00a7ff, #007eff, #0043ff);
+  background-color: #2372cf;
+  //background-image: linear-gradient(to right bottom, #4fe8ff, #00caff, #00a7ff, #007eff, #0043ff);
   
 `;
 const TitleWords = styled.div `
