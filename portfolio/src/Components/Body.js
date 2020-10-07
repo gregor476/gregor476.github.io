@@ -28,16 +28,17 @@ const Section = styled.div `
 `;
 const Header = styled.div `
   font-weight: 800;
-  font-size: 42px;
+  font-size: 36px;
   
 `;
 const Flavor = styled.div `
-  font-size: 22px;
+  padding: 10px 0;
+  font-size: 16px;
   font-style: italic;
   color: ${flavorText};
 `;
 const Text = styled.div `
-  font-size: 32px;
+  font-size: 24px;
 `;
 const CardArea = styled.div `
   display: flex;
@@ -50,14 +51,41 @@ const CardArea = styled.div `
 `;
 const Link = styled.a `
   text-decoration: none;
-  color: #2e65ff;
-
+  color: #4accff;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+const Buttons = styled.ul `
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  text-align: center;
+`;
+const HotButton = styled.button `
+  text-decoration: none;
+  border-style: solid;
+  border-color: white;
+  overflow: visible;
+  display: inline-block;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  background-color: #1c1c1c;
+  margin: 80px 40px;
+  &:hover {
+    cursor: pointer;
+    border-color: #4accff;
+    color: #4accff;
+  }
 `;
 function Body() {  
   return (
     <Core>
       <Navbar/>
-      <Section>
+      <Section id="about">
         <Header>Who am I?</Header>
         <Flavor>Good question... It seems to be always changing</Flavor>
         <Text>
@@ -66,8 +94,13 @@ function Body() {
           I'm eager to work with teams to solve a given problem and am excited to be able to express my mixture of creativity and efficiency.
           <br/><br/>Check out my resume for some of the technologies I've been working with.
         </Text>
+        <Buttons>
+          <HotButton>Resume</HotButton>
+          <HotButton>LinkedIn</HotButton>
+          <HotButton>GitHub</HotButton>
+        </Buttons>
       </Section>
-      <Section>
+      <Section id="projects">
         <Header>What have I worked on?</Header>
         <Flavor>Bit of this, byte of that...</Flavor>
         <Text>

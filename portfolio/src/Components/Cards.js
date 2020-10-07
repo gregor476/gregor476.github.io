@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled'
 import whattowear from '../Images/whattowear.png'
+import { Switch,
+  Route,
+  Link,
+  NavLink,
+} from 'react-router-dom';
 
 const CardBorder = styled.div `
   margin: 10px 10px 10px 10px;
@@ -15,7 +20,7 @@ const CardBorder = styled.div `
     background-image: linear-gradient(to right bottom, #4fe8ff, #00caff, #00a7ff, #007eff, #0043ff);    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
   }
 `;
-const Card = styled.div `
+const Card = styled.div`
   background: white;
   transition-duration: 0.8s;
   -webkit-transition-duration: 0.8s;

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from '@emotion/styled';
-
+import { Link } from "react-scroll";
 const List = styled.ul `
     background-color: #1c1c1c;
     margin: 0;
@@ -29,15 +29,42 @@ const Item = styled.li`
     }
 `;
 
-function Navbar() {
-    return (
-        <React.Fragment>
+const Navbar=() => {
+
+
+   return (
+    <React.Fragment>
             <List>
-                <Item>About</Item>
-                <Item>Projects</Item>
-                <Item>Info</Item>
+                    <Link
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}>
+                    <Item>About</Item>
+                    </Link>
+                    <Link
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}>
+                    <Item>Projects</Item>
+                    </Link>
+                    <Link
+                    activeClass="active"
+                    to="info"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}>
+                    <Item>Info</Item>
+                    </Link>
             </List>
         </React.Fragment>
-    );
-}
+   )
+};
+
 export default Navbar;
