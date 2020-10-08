@@ -14,14 +14,12 @@ const Core = styled.div `
   width: 100%;
   background: ${color};
   box-shadow: 8px 0 16px 0 rgba(0,0,0,0.6);
-  //border-top-left-radius: 40px;
-  //border-top-right-radius: 40px;
 `;
 const Section = styled.div `
-  margin: 0 auto 40px auto;
-  padding 100px 0px 0px 0px;
+  margin: 40px auto 40px auto;
+  padding 50px 50px;
   overflow: visible;
-  max-width: 800px;
+  max-width: 900px;
   border-radius: 40px;
   color: ${mainText};
 
@@ -105,11 +103,12 @@ function Body() {
         <Flavor>Bit of this, byte of that...</Flavor>
         <Text>
         </Text>
-      </Section>
-      <CardArea>
+        <CardArea>
         <Cards/>
         
       </CardArea>
+      </Section>
+      
       
     </Core>
   );

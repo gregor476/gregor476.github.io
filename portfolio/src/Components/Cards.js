@@ -7,46 +7,57 @@ import { Switch,
   NavLink,
 } from 'react-router-dom';
 
-const CardBorder = styled.div `
-  margin: 10px 10px 10px 10px;
-  padding: 0.2rem;
-  position: relative;
-  width: 100vw;
-  max-width: 350px;
-  transition-duration: 0.8s;
-  -webkit-transition-duration: 0.8s;
-  background: white;
-  &:hover {
-    background-image: linear-gradient(to right bottom, #4fe8ff, #00caff, #00a7ff, #007eff, #0043ff);    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-  }
+
+const CardArea = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 `;
 const Card = styled.div`
   background: white;
   transition-duration: 0.8s;
   -webkit-transition-duration: 0.8s;
-
+  width: 250px;
+  height: 150px;
   &:hover {
     //color: white;
     //background: transparent;
   }
 `;
 const Img = styled.img `
+  z-index: 1;
+  height: 100%;
   width: 100%;
+  &:hover {
+    opacity: 0.5;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: -2;
+  }
 `;
 const CardTitle = styled.div `
+  z-index: -1;
+  position: absolute;
   font-size: 36px;
-  padding: 0 10px 10px 10px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 const CardDescription = styled.div `
+  z-index: -1;
+  width: 100%;
   font-size: 24px;
   color: #6e6e6e;
-  padding: 0 10px 15px 10px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 function Cards() {  
   return (
-    <React.Fragment>
-      <CardBorder>
+    <CardArea>
+
         <Card>
           <Img src={whattowear}/>
           <CardTitle>WhatToWear</CardTitle>
@@ -54,8 +65,6 @@ function Cards() {
           The most fail-safe weather app.
           </CardDescription>
         </Card>
-      </CardBorder>
-      <CardBorder>
         <Card>
           <Img src={whattowear}/>
           <CardTitle>WhatToWear</CardTitle>
@@ -63,8 +72,6 @@ function Cards() {
           The most fail-safe weather app.
           </CardDescription>
         </Card>
-      </CardBorder>
-      <CardBorder>
         <Card>
           <Img src={whattowear}/>
           <CardTitle>WhatToWear</CardTitle>
@@ -72,8 +79,8 @@ function Cards() {
           The most fail-safe weather app.
           </CardDescription>
         </Card>
-      </CardBorder>
-    </React.Fragment>
+
+    </CardArea>
     
   );
 }
