@@ -1,58 +1,173 @@
 import React from 'react';
 import styled from '@emotion/styled';
-
+import { css } from '@emotion/core';
+import { Link } from "react-scroll";
 const TitleDiv = styled.div `
-  z-index: -1;
   position: fixed;
   color: white;
-
+  top: 0px;
   height: 100vh;
   width: 100%;
   display: inline-block;
   font-weight: 400;
-  background-color: #2372cf;
-  //background-image: linear-gradient(to right bottom, #4fe8ff, #00caff, #00a7ff, #007eff, #0043ff);
-  
+  text-decoration:none;
+  background-color: #00a3f5;  
 `;
-const TitleWords = styled.div `
-  position: absolute;
-  bottom: 2vw;
-  left: 2vw;
+
+const Terminal = styled.div`
+  position: fixed;
+  top: 20%;
+  left: 15%;
+  height: 60%;
+  margin: auto;
+  width: 70%;
+  background-color: black;  
+  border-radius: 8px;
 `;
-const Name = styled.div `
-  margin-top: 100px;
-  display: inline;
-  font-size: 100px;
-  line-height: 1;
-`;
-const Cursor = styled.div `
-  display: inline;
-  font-size: 120px;
-  font-weight: 100;
-  animation:blinkingText 1.2s infinite;
-  @keyframes blinkingText{
-    0%{     color: white;    }
-    49%{    color: white; }
-    60%{    color: transparent; }
-    99%{    color:transparent;  }
-    100%{   color: white;    }
+const Dr = styled.div`
+  color: #5770ff;
+  display: block;
+  width: 200px;
+  height: 50px;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
+`;
+const File = styled.a`
+  text-decoration: none;
+  margin-right: 40px;
+  color: #86ff57;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+`;
+const Words = styled.div`
+  line-height: 50%;
+  font-size: 28px;
+  margin: -10px 20px;
+  font-family: 'Source Code Pro', monospace;
+`;
+const Grid = styled.div `
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
 
 `;
+const TopBar = styled.div`
+  background-color: #2d2d2d;
+  width: 100%;
+  height: 30px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+`;
+const TextBox = styled.input `
+  width: 20%;
+  color: white;
+  background-color: black;
+  font-size: 28px;
+  font-family: 'Source Code Pro', monospace;
+  border-style: solid;
+  border-color: #363636;
+  border-width: 2px;
+  border-radius: 6px;
+  padding: 4px;
+  &:focus {
+    border-style: none;
 
-function Title() {
-  return (
+  }
+`;
+const Helper = styled.div `
+  posistion: fixed;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  padding: 8px;
+  margin: 70% auto 0 auto;
+
+  border-radius: 8px;
+`;
+
+const dynamicStyle = props => 
+  css`
+    background-color: ${props.color};
+  `;
+
+const Dot = styled.span`
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 6px;
+  ${dynamicStyle};
+`;
+class Title extends React.Component {
+  state={curTime : new Date().toLocaleString()}
+
+
+  render () {
+    return (
     <React.Fragment>
       <TitleDiv>
-        <TitleWords>
-          <Name>Gregory Blood</Name>
-          <Cursor>|</Cursor>
-        </TitleWords>
+        <Helper>Or just scroll</Helper>
+        <Terminal>
+          <TopBar>
+            <Dot color="#ff4036"/>
+            <Dot color="#e5c02a"/>
+            <Dot color="#55c22a"/>
+          </TopBar>
+          <Words>
+            <p>Last Login: {this.state.curTime} on console</p>
+            <p>Gregorys-Machine:~ gregoryblood$ ls </p>
+            <Grid>
+              <Link
+                      activeClass="active"
+                      to="about"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={400}>
+              <Dr>about</Dr>
+              </Link>
+              <Link
+                      activeClass="active"
+                      to="projects"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={400}>
+              <Dr>projects</Dr>
+              </Link>
+              <Link
+                      activeClass="active"
+                      to="info"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={400}>
+              <Dr>contact</Dr>
+              </Link>
+              <File href="https://drive.google.com/file/d/1g15lJY_vtDGeXp6hpz82Ufd9roBxmys4/view?usp=sharing" target="_blank">resume.pdf</File>
+              <File href = "mailto: gregoryblood1998@gmail.com">e-mail.exe</File>
+            
+            </Grid>
+            <br/>
+            <p>Gregorys-Machine:~ gregoryblood$ <TextBox autofocus="autofocus" onfocus="this.select()"></TextBox></p>
+            
+
+          </Words>
+        </Terminal>
+
       </TitleDiv>
       
       
     </React.Fragment>
   );
+  }
 }
 
 export default Title;

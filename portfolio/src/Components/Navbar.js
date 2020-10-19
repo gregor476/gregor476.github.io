@@ -1,32 +1,35 @@
 import React, {useEffect} from 'react';
 import styled from '@emotion/styled';
 import { Link } from "react-scroll";
-const List = styled.ul `
-    background-color: #1c1c1c;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-    
-`;
 
-const Item = styled.li`
+
+const Item = styled.div`
+    position: fixed;
+    width: 100%;
+    top: 30px;
+    right: 10px;
     text-decoration: none;
-    float: left;
     display: block;
-    color: white;
+    color: #00a3f5;
     text-align: center;
-    font-size: 26px;
-    padding: 28px 32px;
+    font-size: 48px;
+    font-weight: bold;
     text-decoration: none;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #00a3f5;
+    border-width: 4px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
+    line-height: 100%;
     &:hover {
-        background-color: lightblue;
-        color: black;
+        background-color: #00a3f5;
+        color: white;
         cursor: pointer;
     }
+
 `;
 
 const Navbar=() => {
@@ -34,35 +37,15 @@ const Navbar=() => {
 
    return (
     <React.Fragment>
-            <List>
-                    <Link
-                    activeClass="active"
-                    to="about"
+            <Link
+                    activeClass="top"
+                    to="top"
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-0}
                     duration={500}>
-                    <Item>About</Item>
+                    <Item><div>^</div></Item>
                     </Link>
-                    <Link
-                    activeClass="active"
-                    to="projects"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}>
-                    <Item>Projects</Item>
-                    </Link>
-                    <Link
-                    activeClass="active"
-                    to="info"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}>
-                    <Item>Info</Item>
-                    </Link>
-            </List>
         </React.Fragment>
    )
 };

@@ -10,6 +10,7 @@ import { Switch,
 
 const CardArea = styled.div`
   display: flex;
+  wdith: 100%;
   flex-wrap: wrap;
   justify-content: flex-start;
 `;
