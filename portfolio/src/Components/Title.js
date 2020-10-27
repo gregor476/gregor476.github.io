@@ -87,8 +87,8 @@ const Helper = styled.div `
   font-size: 40px;
   font-weight: 800;
   padding: 8px;
-  margin: 70% auto 0 auto;
-
+  margin: 92vh auto 0 auto;
+  color: white;
   border-radius: 8px;
 `;
 
@@ -144,19 +144,19 @@ class Title extends React.Component {
               </Link>
               <Link
                       activeClass="active"
-                      to="info"
+                      to="contact"
                       spy={true}
                       smooth={true}
                       offset={0}
                       duration={400}>
               <Dr>contact</Dr>
               </Link>
-              <File href="https://drive.google.com/file/d/1g15lJY_vtDGeXp6hpz82Ufd9roBxmys4/view?usp=sharing" target="_blank">resume.pdf</File>
+              <File href="https://drive.google.com/file/d/1xcoPIFpx5u1I7gwtfwztJXdIMRvp9K_A/view?usp=sharing" target="_blank">resume.pdf</File>
               <File href = "mailto: gregoryblood1998@gmail.com">e-mail.exe</File>
             
             </Grid>
             <br/>
-            <p>Gregorys-Machine:~ gregoryblood$ <TextBox autofocus="autofocus" onfocus="this.select()"></TextBox></p>
+            <p>Gregorys-Machine:~ gregoryblood$ <TextBox autoFocus="autofocus" onfocus="this.select()"></TextBox></p>
             
 
           </Words>

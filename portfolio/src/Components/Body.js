@@ -14,18 +14,16 @@ const Core = styled.div `
   margin: 40px auto 0 auto;
   padding: 0 0 1000px 0;
   width: 100%;
-  font-weight: 600px;
   background: ${color};
   box-shadow: 8px 0 16px 0 rgba(0,0,0,0.6);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 `;
 const Section = styled.div `
   margin: 40px auto 40px auto;
-  padding 50px 50px;
+  padding 50px 20px;
   overflow: visible;
   max-width: 900px;
-  border-radius: 40px;
   color: ${mainText};
 
 `;
@@ -44,13 +42,10 @@ const Text = styled.div `
   font-size: 24px;
 `;
 const CardArea = styled.div `
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: space-evenly;
-  margin: 0 auto 40px auto;
-  width: 100vw;
-  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 `;
 const Link = styled.a `
   text-decoration: none;
@@ -61,8 +56,7 @@ const Link = styled.a `
 `;
 const Buttons = styled.ul `
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 40px 0 0 0;
   overflow: visible;
   text-align: center;
 `;
@@ -71,27 +65,67 @@ const HotButton = styled.button `
   border-style: solid;
   border-color: white;
   border-width: 4px;
-  overflow: visible;
+  border-radius: 8px;
+
   display: inline-block;
   padding: 30px 50px;
-  border-radius: 8px;
-  text-align: center;
   font-size: 22px;
   color: white;
   background-color: #1c1c1c;
-  margin: 80px 40px;
-  transition-duration: 10s;
-  transition-property: width;
+  width: 200px;
+  margin: 20px 40px 0 0px;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
   &:hover {
     cursor: pointer;
     border-color: ${flavorColor};
     color: black;
     background-color: white;
-    
   }
-
 `;
 
+const Form_ = styled.form `
+  width: 100%;
+  font-size: 24px;
+  margin: 30px 0 0 0;
+`;
+const Input_ = styled.input `
+  width: 100%;
+  height: 40px;
+  border: 2px solid ${flavorColor};
+  border-radius: 8px;
+  font-size: 24px;
+  margin: 10px 0;
+  padding: 0 10px;
+
+  `;
+const Submit_ = styled.input `
+  width: 100%;
+  height: 50px;
+  border: 2px solid ${flavorColor};
+  border-radius: 8px;
+  background: white;
+  margin: 20px 0;
+  font-size: 22px;
+  font-family: inherit;
+  &:hover {
+    background-color: ${flavorColor};
+    color: white;
+    cursor: pointer;
+  }
+`;
+const TextArea_ = styled.textarea `
+  font-family: inherit;
+  width: 100%;
+  height: 200px;
+  border: 2px solid ${flavorColor};
+  border-radius: 8px;
+  font-size: 24px;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 10px 0;
+
+`;
 function Body() {  
   return (
     <React.Fragment>
@@ -108,11 +142,9 @@ function Body() {
             computer. I also spend a bit of my free time making games with Unity or playing 
             them with my friends.<br/><br/>
             Check out my resumé for some technologies I've been working with.
-            
-            
           </Text>
           <Buttons>
-            <a href="https://drive.google.com/file/d/1g15lJY_vtDGeXp6hpz82Ufd9roBxmys4/view?usp=sharing" target="_blank"><HotButton>Resumé</HotButton></a>
+            <a href="https://drive.google.com/file/d/1xcoPIFpx5u1I7gwtfwztJXdIMRvp9K_A/view?usp=sharing" target="_blank"><HotButton>Resumé</HotButton></a>
             <a href="https://www.linkedin.com/in/gregoryblood" target="_blank"><HotButton>LinkedIn</HotButton></a>
             <a href="https://github.com/gregoryblood" target="_blank"><HotButton>GitHub</HotButton></a>
           </Buttons>
@@ -126,18 +158,16 @@ function Body() {
         </Section>
         <Section id="contact">
           <Header>Send me a message!</Header>
-          <Flavor>Especially if you have a job</Flavor>
+          <Flavor>Especially if you have a job opportunity</Flavor>
           <Text>Have a comment on the website? Have a specific question? Just want to talk? Email me!</Text>
-           
 
-<form action="mailto:gregoryblood1998@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
-  Name:<br/>
-  <input type="text" size="19" name="ContactName"/><br/>
-  Message:<br/> <textarea name="ContactComment" rows="6" cols="20">
-  </textarea>
-  <input type="submit" value="Submit"/> 
-</form>
-
+          <Form_ action="mailto:gregoryblood1998@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+            Subject:<br/>
+            <Input_ type="text" size="19" name="ContactName"/><br/>
+            Message:<br/> <TextArea_ name="ContactComment">
+            </TextArea_>
+            <Submit_ type="submit" value="Submit"/> 
+          </Form_>
 
         </Section>
       </Core>
