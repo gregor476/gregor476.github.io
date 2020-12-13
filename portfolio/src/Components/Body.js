@@ -144,7 +144,7 @@ function Body() {
             Check out my resumé for some technologies I've been working with.
           </Text>
           <Buttons>
-            <a href="https://drive.google.com/file/d/1xcoPIFpx5u1I7gwtfwztJXdIMRvp9K_A/view?usp=sharing" target="_blank"><HotButton>Resumé</HotButton></a>
+            <a href="https://github.com/gregoryblood/gregoryblood.github.io/blob/master/website/resume.pdf" target="_blank"><HotButton>Resumé</HotButton></a>
             <a href="https://www.linkedin.com/in/gregoryblood" target="_blank"><HotButton>LinkedIn</HotButton></a>
             <a href="https://github.com/gregoryblood" target="_blank"><HotButton>GitHub</HotButton></a>
           </Buttons>
