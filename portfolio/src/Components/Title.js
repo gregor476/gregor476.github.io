@@ -151,7 +151,7 @@ class Title extends React.Component {
                       duration={400}>
               <Dr>contact</Dr>
               </Link>
-              <File href="https://drive.google.com/file/d/1xcoPIFpx5u1I7gwtfwztJXdIMRvp9K_A/view?usp=sharing" target="_blank">resume.pdf</File>
+              <File href="https://github.com/gregoryblood/gregoryblood.github.io/blob/master/website/resume.pdf" target="_blank">resume.pdf</File>
               <File href = "mailto: gregoryblood1998@gmail.com">e-mail.exe</File>
             
             </Grid>
