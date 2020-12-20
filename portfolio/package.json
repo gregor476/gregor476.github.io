@@ -17,6 +17,7 @@
     "react-scripts": "3.4.1",
     "react-scroll": "^1.8.1"
   },
+  "homepage": "http://gregoryblood.me/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -37,5 +38,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
 }
