@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/home/static/css/main.176b7693.chunk.css",
+    "main.js": "/home/static/js/main.52da3bb6.chunk.js",
+    "main.js.map": "/home/static/js/main.52da3bb6.chunk.js.map",
+    "runtime-main.js": "/home/static/js/runtime-main.56137043.js",
+    "runtime-main.js.map": "/home/static/js/runtime-main.56137043.js.map",
+    "static/js/2.1d7b8895.chunk.js": "/home/static/js/2.1d7b8895.chunk.js",
+    "static/js/2.1d7b8895.chunk.js.map": "/home/static/js/2.1d7b8895.chunk.js.map",
+    "index.html": "/home/index.html",
+    "precache-manifest.4341211cf92a8f6adceb20f39f7d856b.js": "/home/precache-manifest.4341211cf92a8f6adceb20f39f7d856b.js",
+    "service-worker.js": "/home/service-worker.js",
+    "static/css/main.176b7693.chunk.css.map": "/home/static/css/main.176b7693.chunk.css.map",
+    "static/js/2.1d7b8895.chunk.js.LICENSE.txt": "/home/static/js/2.1d7b8895.chunk.js.LICENSE.txt",
+    "static/media/ships.png": "/home/static/media/ships.3b8d9c94.png",
+    "static/media/whattowear.png": "/home/static/media/whattowear.14c86f32.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.56137043.js",
+    "static/js/2.1d7b8895.chunk.js",
+    "static/css/main.176b7693.chunk.css",
+    "static/js/main.52da3bb6.chunk.js"
+  ]
+}
