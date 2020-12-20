@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/build/static/css/main.176b7693.chunk.css",
+    "main.js": "/portfolio/build/static/js/main.9849e979.chunk.js",
+    "main.js.map": "/portfolio/build/static/js/main.9849e979.chunk.js.map",
+    "runtime-main.js": "/portfolio/build/static/js/runtime-main.aa50d5a3.js",
+    "runtime-main.js.map": "/portfolio/build/static/js/runtime-main.aa50d5a3.js.map",
+    "static/js/2.1d7b8895.chunk.js": "/portfolio/build/static/js/2.1d7b8895.chunk.js",
+    "static/js/2.1d7b8895.chunk.js.map": "/portfolio/build/static/js/2.1d7b8895.chunk.js.map",
+    "index.html": "/portfolio/build/index.html",
+    "precache-manifest.33ed5098461845e5f8dda929abb2b1f9.js": "/portfolio/build/precache-manifest.33ed5098461845e5f8dda929abb2b1f9.js",
+    "service-worker.js": "/portfolio/build/service-worker.js",
+    "static/css/main.176b7693.chunk.css.map": "/portfolio/build/static/css/main.176b7693.chunk.css.map",
+    "static/js/2.1d7b8895.chunk.js.LICENSE.txt": "/portfolio/build/static/js/2.1d7b8895.chunk.js.LICENSE.txt",
+    "static/media/ships.png": "/portfolio/build/static/media/ships.3b8d9c94.png",
+    "static/media/whattowear.png": "/portfolio/build/static/media/whattowear.14c86f32.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa50d5a3.js",
+    "static/js/2.1d7b8895.chunk.js",
+    "static/css/main.176b7693.chunk.css",
+    "static/js/main.9849e979.chunk.js"
+  ]
+}
