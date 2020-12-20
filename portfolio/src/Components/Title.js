@@ -8,7 +8,7 @@ const TitleDiv = styled.div `
   top: 0px;
   height: 100vh;
   width: 100%;
-  display: inline-block;
+  display: block;
   font-weight: 400;
   text-decoration:none;
   background-color: #00a3f5;  
@@ -23,6 +23,13 @@ const Terminal = styled.div`
   width: 70%;
   background-color: black;  
   border-radius: 8px;
+  @media(max-width: 768px) {
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    height: 80%;
+  }
 `;
 const Dr = styled.div`
   color: #5770ff;
@@ -32,7 +39,15 @@ const Dr = styled.div`
   &:hover {
     cursor: pointer;
     text-decoration: underline;
+    
   }
+  @media(max-width: 768px) {
+    width: 100%;
+    margin: 20px;
+    margin-left: 0;
+    height: 100%;
+  }
+  
 `;
 const File = styled.a`
   text-decoration: none;
@@ -42,18 +57,32 @@ const File = styled.a`
     cursor: pointer;
     text-decoration: underline;
   }
+  @media(max-width: 768px) {
+    margin: 20px;
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+  }
 `;
 const Words = styled.div`
-  line-height: 50%;
+  line-height: 100%;
   font-size: 28px;
   margin: -10px 20px;
+  padding: 0;
   font-family: 'Source Code Pro', monospace;
+
+  @media(max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 const Grid = styled.div `
   width: 600px;
   display: flex;
   flex-wrap: wrap;
 
+  @media(max-width: 768px) {
+    width: 300px;
+  }
 `;
 const TopBar = styled.div`
   background-color: #2d2d2d;
@@ -75,8 +104,11 @@ const TextBox = styled.input `
   padding: 4px;
   &:focus {
     border-style: none;
-
   }
+  @media(max-width: 768px) {
+    display: none;
+  }
+
 `;
 const Helper = styled.div `
   posistion: fixed;
@@ -87,9 +119,12 @@ const Helper = styled.div `
   font-size: 40px;
   font-weight: 800;
   padding: 8px;
-  margin: 92vh auto 0 auto;
+  margin: 90vh auto 0 auto;
   color: white;
   border-radius: 8px;
+  @media(max-width: 768px) {
+    font-size: 32px;
+  }
 `;
 
 const dynamicStyle = props => 
@@ -122,7 +157,7 @@ class Title extends React.Component {
           </TopBar>
           <Words>
             <p>Last Login: {this.state.curTime} on console</p>
-            <p>Gregorys-Machine:~ gregoryblood$ ls </p>
+            <p>Your-Machine:~ main$ ls </p>
             <Grid>
               <Link
                       activeClass="active"
@@ -156,7 +191,7 @@ class Title extends React.Component {
             
             </Grid>
             <br/>
-            <p>Gregorys-Machine:~ gregoryblood$ <TextBox autoFocus="autofocus" onfocus="this.select()"></TextBox></p>
+            <p>Your-Machine:~ main$ <TextBox autoFocus="autofocus" onfocus="this.select()"></TextBox></p>
             
 
           </Words>

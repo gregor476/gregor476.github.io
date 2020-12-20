@@ -6,8 +6,7 @@ import { Link } from "react-scroll";
 const Item = styled.div`
     position: fixed;
     width: 100%;
-    top: 30px;
-    right: 10px;
+    
     text-decoration: none;
     display: block;
     color: #00a3f5;
@@ -24,17 +23,30 @@ const Item = styled.div`
     padding: 10px;
     margin: 10px;
     line-height: 100%;
+    z-index: 10;
+
     &:hover {
         background-color: #00a3f5;
         color: white;
         cursor: pointer;
     }
+    @media(min-width: 769px) {
+        top: 30px;
+        right: 10px;
+    }
+    @media(max-width: 768px) {
+        height: 30px;
+        width: 30px;
+        bottom: 7px;
+        left: 7px;
+        line-height: 60%;
+        
+
+    }
 
 `;
 
 const Navbar=() => {
-
-
    return (
     <React.Fragment>
             <Link

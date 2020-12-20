@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from '@emotion/styled';
 import Cards from './Cards';
 import Navbar from './Navbar';
+import { render } from 'react-dom';
 
 const color = 'white';
 const mainText = 'black';
@@ -42,10 +43,8 @@ const Text = styled.div `
   font-size: 24px;
 `;
 const CardArea = styled.div `
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  margin: 0;
+  padding: 0;
 `;
 const Link = styled.a `
   text-decoration: none;
@@ -66,7 +65,7 @@ const HotButton = styled.button `
   border-color: white;
   border-width: 4px;
   border-radius: 8px;
-
+  
   display: inline-block;
   padding: 30px 50px;
   font-size: 22px;
@@ -83,11 +82,12 @@ const HotButton = styled.button `
     background-color: white;
   }
 `;
-
-const Form_ = styled.form `
-  width: 100%;
+const Disclaimer = styled.div `
   font-size: 24px;
-  margin: 30px 0 0 0;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  padding: 40px 0;
 `;
 const Input_ = styled.input `
   width: 100%;
@@ -96,84 +96,82 @@ const Input_ = styled.input `
   border-radius: 8px;
   font-size: 24px;
   margin: 10px 0;
-  padding: 0 10px;
 
   `;
-const Submit_ = styled.input `
+const Submit_ = styled.a `
+  display: block;
+  text-align: center;
   width: 100%;
-  height: 50px;
   border: 2px solid ${flavorColor};
   border-radius: 8px;
   background: white;
-  margin: 20px 0;
-  font-size: 22px;
+  margin: 20px auto;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 24px;
   font-family: inherit;
+  color: black;
+  text-decoration: none;
   &:hover {
     background-color: ${flavorColor};
     color: white;
     cursor: pointer;
   }
 `;
-const TextArea_ = styled.textarea `
-  font-family: inherit;
-  width: 100%;
-  height: 200px;
-  border: 2px solid ${flavorColor};
-  border-radius: 8px;
-  font-size: 24px;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 10px 0;
 
-`;
-function Body() {  
-  return (
-    <React.Fragment>
-      <span id="top"/>
-      <Core>
+export class Body extends Component{  
+  state = {
+    subject: '',
+    body: ''
+  };
+  updateField = (field) => (text) => {
+    this.setState({ [field]: text });
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <span id="top"/>
         <Navbar/>
-        <Section id="about">
-          <Header>Who am I?</Header>
-          <Flavor>Good question... It seems to be always changing</Flavor>
-          <Text>
-            I am a Senior at <Link href={'https://oregonstate.edu/'} target={'_blank'}>Oregon State University</Link> studying 
-            Computer science and I'm eager to work with teams to solve real world problems.<br/><br/>
-            When I'm away from the computer I enjoy fishing, camping, and thinking about my 
-            computer. I also spend a bit of my free time making games with Unity or playing 
-            them with my friends.<br/><br/>
-            Check out my resumé for some technologies I've been working with.
-          </Text>
-          <Buttons>
-            <a href="https://github.com/gregoryblood/gregoryblood.github.io/blob/master/website/resume.pdf" target="_blank"><HotButton>Resumé</HotButton></a>
-            <a href="https://www.linkedin.com/in/gregoryblood" target="_blank"><HotButton>LinkedIn</HotButton></a>
-            <a href="https://github.com/gregoryblood" target="_blank"><HotButton>GitHub</HotButton></a>
-          </Buttons>
-        </Section>
-        <Section id="projects">
-          <Header>What have I worked on?</Header>
-          <Flavor>Bit of this, a byte of that...</Flavor>
-          <CardArea>
-            <Cards/>
-          </CardArea>
-        </Section>
-        <Section id="contact">
-          <Header>Send me a message!</Header>
-          <Flavor>Especially if you have a job opportunity</Flavor>
-          <Text>Have a comment on the website? Have a specific question? Just want to talk? Email me!</Text>
+        <Core>
+          <Section id="about">
+            <Header>Who am I?</Header>
+            <Flavor>Half human, half code monkey</Flavor>
+            <Text>
+              I am a Senior at <Link href={'https://oregonstate.edu/'} target={'_blank'}>Oregon State University</Link> studying 
+              Computer science and I'm eager to work with teams to solve real world problems.<br/><br/>
+              When I'm away from the computer I enjoy fishing, camping, and thinking about my 
+              computer. I also spend a bit of my free time making games with Unity or playing 
+              them with my friends.<br/><br/>
+              Check out my resumé for some technologies I've been working with.
+            </Text>
+            <Buttons>
+              <a href="https://github.com/gregoryblood/gregoryblood.github.io/blob/master/website/resume.pdf" target="_blank"><HotButton>Resumé</HotButton></a>
+              <a href="https://www.linkedin.com/in/gregoryblood" target="_blank"><HotButton>LinkedIn</HotButton></a>
+              <a href="https://github.com/gregoryblood" target="_blank"><HotButton>GitHub</HotButton></a>
+            </Buttons>
+          </Section>
+          <Section id="projects">
+            <Header>What have I worked on?</Header>
+            <Flavor>Bit of this, a byte of that...</Flavor>
+            <Disclaimer>I'm still working on uploading my projects</Disclaimer>
+            <CardArea>
+              <Cards/>
+            </CardArea>
+          </Section>
+          <Section id="contact">
+            <Header>Send me a message!</Header>
+            <Flavor>Especially if you have a job opportunity</Flavor>
+            <Text>Have a comment on the website? Have a specific question? Just want to talk? Email me!</Text>
+              <Input_ value='subject' onChangeText={this.updateField('subject')}/><br/>
+              <Input_ value= 'body' onChangeText={this.updateField('body')}/>
+            <Submit_ href={('mailto: gregoryblood1998@gmail.com?subject=' + this.state.subject + '?body=' + this.state.body.toString())} >Send!</Submit_> 
+          </Section>
+        </Core>
+      </React.Fragment>
+      
+    );
 
-          <Form_ action="mailto:gregoryblood1998@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
-            Subject:<br/>
-            <Input_ type="text" size="19" name="ContactName"/><br/>
-            Message:<br/> <TextArea_ name="ContactComment">
-            </TextArea_>
-            <Submit_ type="submit" value="Submit"/> 
-          </Form_>
-
-        </Section>
-      </Core>
-    </React.Fragment>
-    
-  );
+  };
 }
 
 export default Body;

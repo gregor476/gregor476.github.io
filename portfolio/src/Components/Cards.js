@@ -6,7 +6,7 @@ import { useRouteMatch, Switch, Route, NavLink } from 'react-router-dom';
 
 
 const CardArea = styled.div`
-  display: flex;
+  display: flexbox;
   flex-wrap: wrap;
   text-align: center;
   width: 100%;
@@ -16,7 +16,7 @@ const CardArea = styled.div`
 `;
 const Card = styled(NavLink)`
   text-decoration: none;
-  background: #20a3fa;
+  background: transparent;
   width: 300px;
   height: 200px;
   display: block;
@@ -29,10 +29,17 @@ const Img = styled.img `
   z-index: 2;
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
   &:hover {
-    opacity: 0.15;
+    opacity: 0.35;
+    filter: blur(8px);
+    -webkit-filter: blur(4px);
+  }
+  @media(max-width: 768px) {
+    opacity: 0.35;
     filter: blur(8px);
     -webkit-filter: blur(4px);
   }
@@ -43,7 +50,7 @@ const CardTitle = styled.div `
   top: -80%;
   font-size: 28px;
   font-weight: 800;
-  color: white;
+  color: black;
 `;
 const CardDescription = styled.div `
   z-index: 1;
@@ -52,7 +59,7 @@ const CardDescription = styled.div `
   position: relative;
   top: -70%;
   font-size: 18px;
-  color: white;
+  color: black;
 `;
 
 function Cards() {  
@@ -116,10 +123,7 @@ function Cards() {
           Organize your music... fast
           </CardDescription>
         </Card>
-
-
     </CardArea>
-    
   );
 }
 
