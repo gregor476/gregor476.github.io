@@ -17,7 +17,7 @@
     "react-scripts": "3.4.1",
     "react-scroll": "^1.8.1"
   },
-  "homepage": "https://gregoryblood.me/portfolio/build/",
+  "homepage": "https://www.gregoryblood.me/portfolio/build",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
