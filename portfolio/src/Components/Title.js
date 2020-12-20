@@ -104,6 +104,7 @@ const TextBox = styled.input `
   padding: 4px;
   &:focus {
     border-style: none;
+    outline: none;
   }
   @media(max-width: 768px) {
     display: none;

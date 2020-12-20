@@ -81,6 +81,7 @@ const HotButton = styled.button `
     color: black;
     background-color: white;
   }
+  
 `;
 const Disclaimer = styled.div `
   font-size: 24px;
@@ -96,8 +97,30 @@ const Input_ = styled.input `
   border-radius: 8px;
   font-size: 24px;
   margin: 10px 0;
+  padding: 4px;
+  &:focus {
+    outline: none !important;
+  }
+`;
+const Text_ = styled.textarea `
+  width: 100%;
+  height: 80px;
+  border: 2px solid ${flavorColor};
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 8px;
+  font-size: 24px;
+  
+  margin: 10px 0;
+  padding: 4px;
+  resize: none;
+  overflow: auto;
+  
 
-  `;
+  &:focus {
+    outline: none !important;
+  }
+`;
 const Submit_ = styled.a `
   display: block;
   text-align: center;
@@ -119,13 +142,21 @@ const Submit_ = styled.a `
   }
 `;
 
-export class Body extends Component{  
-  state = {
-    subject: '',
-    body: ''
-  };
-  updateField = (field) => (text) => {
-    this.setState({ [field]: text });
+export class Body extends React.Component{  
+  constructor(props) {
+    super(props);
+    this.state = {
+      subject: '',
+      body: ''
+    };
+    this.handleSubject = this.handleSubject.bind(this);
+    this.handleBody = this.handleBody.bind(this);
+  }
+  handleSubject(event) {
+    this.setState({subject: event.target.value});
+  }
+  handleBody(event) {
+    this.setState({body: event.target.value});
   }
   render() {
     return (
@@ -162,9 +193,9 @@ export class Body extends Component{
             <Header>Send me a message!</Header>
             <Flavor>Especially if you have a job opportunity</Flavor>
             <Text>Have a comment on the website? Have a specific question? Just want to talk? Email me!</Text>
-              <Input_ value='subject' onChangeText={this.updateField('subject')}/><br/>
-              <Input_ value= 'body' onChangeText={this.updateField('body')}/>
-            <Submit_ href={('mailto: gregoryblood1998@gmail.com?subject=' + this.state.subject + '?body=' + this.state.body.toString())} >Send!</Submit_> 
+              <Input_ value = {this.state.value} placeholder='Subject' onChange={this.handleSubject}/><br/>
+              <Text_ rows="4" value={this.state.value} placeholder= 'Body' onChange={this.handleBody}/>
+            <Submit_ href={`mailto: gregoryblood1998@gmail.com?subject=${this.state.subject}&body=${this.state.body}`}>Send!</Submit_> 
           </Section>
         </Core>
       </React.Fragment>

@@ -6,21 +6,28 @@ import WhatToWear from './Pages/whattowear';
 
 
 
-function App() {
-  return (
-    <div>
-      <Switch >
-        <Route path="/whattowear">
-          <WhatToWear/>
-        </Route>
-        <Route path="/">
-          <Title/>
-          <Body/>
-        </Route>
-      </Switch>
-      
-    </div>
-  );
+class App extends React.Component  {
+
+  componenDidMount() {
+    this.props.history.push('/home');
+ }
+
+  render() {
+    return (
+      <div>
+        <Switch >
+          <Route path="/whattowear">
+            <WhatToWear/>
+          </Route>
+          <Route path="/">
+            <Title/>
+            <Body/>
+          </Route>
+        </Switch>
+        
+      </div>
+    );
+  }
 }
 //<Navbar/>
 export default App;

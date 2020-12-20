@@ -74,6 +74,14 @@ function Cards() {
           </CardDescription>
         </Card>
         <Card to={`/whattowear`}>
+          <Img src={ships}/>
+          <CardTitle>Ships!</CardTitle>
+          <CardDescription>
+          A party game for pirate lovers
+          </CardDescription>
+        </Card>
+        {/*
+        <Card to={`/whattowear`}>
           <Img src={whattowear}/>
           <CardTitle>Oblivion</CardTitle>
           <CardDescription>
@@ -87,13 +95,7 @@ function Cards() {
           Nature simulating machine learning
           </CardDescription>
         </Card>
-        <Card to={`/whattowear`}>
-          <Img src={ships}/>
-          <CardTitle>Ships!</CardTitle>
-          <CardDescription>
-          A party game for pirate lovers
-          </CardDescription>
-        </Card>
+        
         <Card to={`/whattowear`}>
           <Img src={whattowear}/>
           <CardTitle>Affair of Honor</CardTitle>
@@ -108,7 +110,6 @@ function Cards() {
           Retro game with a twist
           </CardDescription>
         </Card>
-
         <Card to={`/whattowear`}>
           <Img src={whattowear}/>
           <CardTitle>Pure Honey</CardTitle>
@@ -123,6 +124,8 @@ function Cards() {
           Organize your music... fast
           </CardDescription>
         </Card>
+        */}
+        
     </CardArea>
   );
 }
