@@ -8,9 +8,7 @@ import WhatToWear from './Pages/whattowear';
 
 class App extends React.Component  {
 
-  componenDidMount() {
-    this.props.history.push('/home');
- }
+  
 
   render() {
     return (
