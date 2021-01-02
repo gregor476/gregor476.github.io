@@ -59,11 +59,14 @@ const CardTitle = styled.div `
 `;
 const CardDescription = styled.div `
   z-index: 1;
-  width: 95%;
-  margin: auto;
+  width: 80%;
+  margin: 0 auto;
   position: relative;
-  top: -70%;
-  font-size: 18px;
+  font-size: 32px;
+  display: block;
+  text-align: center;
+  top: ${props => props.needSpace ? '-80%' : '-70%'};
+  font-weight: 1000;
   color: black;
 `;
 
@@ -73,37 +76,32 @@ function Cards() {
         
         <Card to={`/whattowear`}>
           <Img src={whattowear}/>
-          <CardTitle>WhatToWear</CardTitle>
-          <CardDescription>
-          The most fail-safe weather app.
+          <CardDescription needSpace>
+          The Most Fail-Safe Weather App.
           </CardDescription>
         </Card>
         <Card to={`/whattowear`}>
           <Img src={ships}/>
-          <CardTitle>Ships!</CardTitle>
           <CardDescription>
-          A party game for pirate lovers
+          A Party Game for Pirates
           </CardDescription>
         </Card>
         <Card to={`/masterblaster`}>
           <Img src={ mb3 }/>
-          <CardTitle>Master Blaster</CardTitle>
           <CardDescription>
-          Retro game with a twist
+          A Retro Game with a Twist
           </CardDescription>
         </Card>
         <Card to={`/purehoney`}>
           <Img src={ph1}/>
-          <CardTitle>Pure Honey</CardTitle>
           <CardDescription>
-          A place to buy honey
+          A Website to Buy Honey
           </CardDescription>
         </Card>
         <Card to={`/musicmajik`}>
           <Img src={mm1}/>
-          <CardTitle>Spotify App</CardTitle>
           <CardDescription>
-          Organize your music... fast
+          Organize your Music... Fast
           </CardDescription>
         </Card>
         {/*

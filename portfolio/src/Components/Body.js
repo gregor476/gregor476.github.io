@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from '@emotion/styled';
 import Cards from './Cards';
-import Navbar from './Navbar';
+
 import { render } from 'react-dom';
 
 const color = 'white';
@@ -162,7 +162,6 @@ export class Body extends React.Component{
     return (
       <React.Fragment>
         <span id="top"/>
-        <Navbar/>
         <Core>
           <Section id="about">
             <Header>Who am I?</Header>

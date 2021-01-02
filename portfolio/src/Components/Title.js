@@ -9,7 +9,8 @@ const TitleDiv = styled.div `
   height: 100vh;
   width: 100%;
   display: block;
-  font-weight: 400;
+  font-weight: 800;
+  
   text-decoration:none;
   background-color: #00a3f5;  
 `;
@@ -32,7 +33,7 @@ const Terminal = styled.div`
   }
 `;
 const Dr = styled.div`
-  color: #7388ff;
+  color: #73a6ff;
   display: block;
   width: 200px;
   height: 50px;

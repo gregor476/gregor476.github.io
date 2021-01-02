@@ -1,11 +1,11 @@
 import React from 'react';
-import styled from '@emotion/styled'
+import {PTitle} from './style';
 
 
 function WhatToWear() {  
   return (
     <React.Fragment>
-        <h1>Hello</h1>
+        <PTitle>Hello</PTitle>
     </React.Fragment>
     
   );
