@@ -28,21 +28,20 @@ const Terminal = styled.div`
     left: 0;
     top: 0;
     margin: 0 auto;
-    height: 80%;
+    height: 87%;
   }
 `;
 const Dr = styled.div`
-  color: #5770ff;
+  color: #7388ff;
   display: block;
   width: 200px;
   height: 50px;
   &:hover {
     cursor: pointer;
     text-decoration: underline;
-    
   }
   @media(max-width: 768px) {
-    width: 100%;
+    width: 200px;
     margin: 20px;
     margin-left: 0;
     height: 100%;

@@ -1,9 +1,11 @@
 import React from 'react';
-import styled from '@emotion/styled'
-import whattowear from '../Images/whattowear.png'
-import ships from '../Images/ships.png'
-import { useRouteMatch, Switch, Route, NavLink } from 'react-router-dom';
-
+import styled from '@emotion/styled';
+import whattowear from '../Images/whattowear.png';
+import ships from '../Images/ships.png';
+import mb3 from '../Images/mb3.png';
+import ph1 from '../Images/ph1.jpg';
+import mm1 from '../Images/mm1.png';
+import { NavLink } from 'react-router-dom';
 
 const CardArea = styled.div`
   display: flexbox;
@@ -12,7 +14,9 @@ const CardArea = styled.div`
   width: 100%;
   max-width: 1200px;
   align-items: center;
-
+  @media(max-width: 768px) {
+    justify-content: center;
+  }
 `;
 const Card = styled(NavLink)`
   text-decoration: none;
@@ -33,6 +37,7 @@ const Img = styled.img `
   padding: 0;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
+  object-fit: cover;
   &:hover {
     opacity: 0.35;
     filter: blur(8px);
@@ -80,6 +85,27 @@ function Cards() {
           A party game for pirate lovers
           </CardDescription>
         </Card>
+        <Card to={`/masterblaster`}>
+          <Img src={ mb3 }/>
+          <CardTitle>Master Blaster</CardTitle>
+          <CardDescription>
+          Retro game with a twist
+          </CardDescription>
+        </Card>
+        <Card to={`/purehoney`}>
+          <Img src={ph1}/>
+          <CardTitle>Pure Honey</CardTitle>
+          <CardDescription>
+          A place to buy honey
+          </CardDescription>
+        </Card>
+        <Card to={`/musicmajik`}>
+          <Img src={mm1}/>
+          <CardTitle>Spotify App</CardTitle>
+          <CardDescription>
+          Organize your music... fast
+          </CardDescription>
+        </Card>
         {/*
         <Card to={`/whattowear`}>
           <Img src={whattowear}/>
@@ -95,7 +121,6 @@ function Cards() {
           Nature simulating machine learning
           </CardDescription>
         </Card>
-        
         <Card to={`/whattowear`}>
           <Img src={whattowear}/>
           <CardTitle>Affair of Honor</CardTitle>
@@ -103,27 +128,7 @@ function Cards() {
           A party game for competitive people
           </CardDescription>
         </Card>
-        <Card to={`/whattowear`}>
-          <Img src={whattowear}/>
-          <CardTitle>Master Blaster</CardTitle>
-          <CardDescription>
-          Retro game with a twist
-          </CardDescription>
-        </Card>
-        <Card to={`/whattowear`}>
-          <Img src={whattowear}/>
-          <CardTitle>Pure Honey</CardTitle>
-          <CardDescription>
-          A place to buy honey
-          </CardDescription>
-        </Card>
-        <Card to={`/whattowear`}>
-          <Img src={whattowear}/>
-          <CardTitle>Spotify App</CardTitle>
-          <CardDescription>
-          Organize your music... fast
-          </CardDescription>
-        </Card>
+        
         */}
         
     </CardArea>

@@ -11,7 +11,6 @@ function ProjectPage() {
         <h1>Links</h1>
         <h1>Description</h1>
     </React.Fragment>
-    
   );
 }
 
