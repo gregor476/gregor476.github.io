@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from '@emotion/styled';
 import Cards from './Cards';
-
-import { render } from 'react-dom';
 
 const color = 'white';
 const mainText = 'black';
@@ -11,12 +9,12 @@ const flavorColor = "#20a3fa"
 
 const Core = styled.div `
   position: relative;
-  top: 100vh;
+  top: 91vh;
   margin: 40px auto 0 auto;
   padding: 0 0 1000px 0;
   width: 100%;
   background: ${color};
-  box-shadow: 8px 0 16px 0 rgba(0,0,0,0.6);
+  box-shadow: 0px -12px 24px 0px rgba(0,0,0,0.6);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 `;
@@ -31,7 +29,6 @@ const Section = styled.div `
 const Header = styled.div `
   font-weight: 800;
   font-size: 36px;
-  
 `;
 const Flavor = styled.div `
   padding: 10px 0;
@@ -53,13 +50,13 @@ const Link = styled.a `
     text-decoration: underline;
   }
 `;
-const Buttons = styled.ul `
+export const Buttons = styled.ul `
   list-style-type: none;
   margin: 40px 0 0 0;
   overflow: visible;
   text-align: center;
 `;
-const HotButton = styled.button `
+export const HotButton = styled.button `
   text-decoration: none;
   border-style: solid;
   border-color: white;
@@ -165,7 +162,7 @@ export class Body extends React.Component{
         <Core>
           <Section id="about">
             <Header>Who am I?</Header>
-            <Flavor>Half human, half code monkey</Flavor>
+            <Flavor>Half human, half code monkey...</Flavor>
             <Text>
               I am a Senior at <Link href={'https://oregonstate.edu/'} target={'_blank'}>Oregon State University</Link> studying 
               Computer science and I'm eager to work with teams to solve real world problems.<br/><br/>
@@ -190,7 +187,7 @@ export class Body extends React.Component{
           </Section>
           <Section id="contact">
             <Header>Send me a message!</Header>
-            <Flavor>Especially if you have a job opportunity</Flavor>
+            <Flavor>Especially if you have a job opportunity...</Flavor>
             <Text>Have a comment on the website? Have a specific question? Just want to talk? Email me!</Text>
               <Input_ value = {this.state.value} placeholder='Subject' onChange={this.handleSubject}/><br/>
               <Text_ rows="4" value={this.state.value} placeholder= 'Body' onChange={this.handleBody}/>

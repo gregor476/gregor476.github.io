@@ -43,11 +43,7 @@ const Img = styled.img `
     filter: blur(8px);
     -webkit-filter: blur(4px);
   }
-  @media(max-width: 768px) {
-    opacity: 0.35;
-    filter: blur(8px);
-    -webkit-filter: blur(4px);
-  }
+  
 `;
 const CardTitle = styled.div `
   z-index: 1;
@@ -65,7 +61,7 @@ const CardDescription = styled.div `
   font-size: 32px;
   display: block;
   text-align: center;
-  top: ${props => props.needSpace ? '-80%' : '-70%'};
+  top: ${props => props.needSpace ? '-80%' : '-75%'};
   font-weight: 1000;
   color: black;
 `;
@@ -73,11 +69,10 @@ const CardDescription = styled.div `
 function Cards() {  
   return (
     <CardArea>
-        
         <Card to={`/whattowear`}>
           <Img src={whattowear}/>
           <CardDescription needSpace>
-          The Most Fail-Safe Weather App.
+          The Most Fail-Safe Weather App
           </CardDescription>
         </Card>
         <Card to={`/whattowear`}>

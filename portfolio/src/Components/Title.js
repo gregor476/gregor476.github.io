@@ -29,7 +29,7 @@ const Terminal = styled.div`
     left: 0;
     top: 0;
     margin: 0 auto;
-    height: 87%;
+    height: 82%;
   }
 `;
 const Dr = styled.div`
@@ -70,7 +70,6 @@ const Words = styled.div`
   margin: -10px 20px;
   padding: 0;
   font-family: 'Source Code Pro', monospace;
-
   @media(max-width: 768px) {
     font-size: 20px;
   }
@@ -117,10 +116,10 @@ const Helper = styled.div `
   height: 10%;
   text-align: center;
   color: white;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 800;
   padding: 8px;
-  margin: 90vh auto 0 auto;
+  margin: 85vh auto 0 auto;
   color: white;
   border-radius: 8px;
   @media(max-width: 768px) {

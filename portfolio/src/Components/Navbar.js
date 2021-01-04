@@ -21,7 +21,7 @@ const Item = styled.div`
     width: 30px;
     padding: 10px;
     margin: 10px;
-    line-height: 25%;
+    line-height: 23%;
     z-index: 10;
     &:hover {
         background-color: #00a3f5;
@@ -33,11 +33,19 @@ const Item = styled.div`
         right: 10px;
     }
     @media(max-width: 768px) {
-        bottom: 7px;
+        bottom: 45px;
         left: 7px;
     }
 `;
-
+const BottomShadow= styled.div`
+    position: fixed;
+    box-shadow: 0 -16px 16px 16px white;
+    width: 100%;
+    top: 102vh;
+    z-index: 10;
+    background: red;
+    height: 10px;
+`;
 const Navbar=() => {
    return (
     <React.Fragment>
@@ -49,7 +57,8 @@ const Navbar=() => {
                     offset={-0}
                     duration={500}>
                     <Item><div>^ I</div></Item>
-                    </Link>
+                    <BottomShadow/>
+            </Link>
         </React.Fragment>
    )
 };
