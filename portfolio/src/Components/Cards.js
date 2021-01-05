@@ -69,18 +69,6 @@ const CardDescription = styled.div `
 function Cards() {  
   return (
     <CardArea>
-        <Card to={`/whattowear`}>
-          <Img src={whattowear}/>
-          <CardDescription needSpace>
-          The Most Fail-Safe Weather App
-          </CardDescription>
-        </Card>
-        <Card to={`/whattowear`}>
-          <Img src={ships}/>
-          <CardDescription>
-          A Party Game for Pirates
-          </CardDescription>
-        </Card>
         <Card to={`/masterblaster`}>
           <Img src={ mb3 }/>
           <CardDescription>
@@ -99,6 +87,19 @@ function Cards() {
           Organize your Music... Fast
           </CardDescription>
         </Card>
+        <Card to={`/ships`}>
+          <Img src={ships}/>
+          <CardDescription>
+          A Party Game for Pirates
+          </CardDescription>
+        </Card>
+        <Card to={`/whattowear`}>
+          <Img src={whattowear}/>
+          <CardDescription needSpace>
+          The Most Fail-Safe Weather App
+          </CardDescription>
+        </Card>
+        
         {/*
         <Card to={`/whattowear`}>
           <Img src={whattowear}/>

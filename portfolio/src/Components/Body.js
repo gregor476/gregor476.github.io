@@ -165,9 +165,9 @@ export class Body extends React.Component{
             <Flavor>Half human, half code monkey...</Flavor>
             <Text>
               I am a Senior at <Link href={'https://oregonstate.edu/'} target={'_blank'}>Oregon State University</Link> studying 
-              Computer science and I'm eager to work with teams to solve real world problems.<br/><br/>
+              Computer science and I'm eager to work in teams, and eventually lead them, to solve real world problems.<br/><br/>
               When I'm away from the computer I enjoy fishing, camping, and thinking about my 
-              computer. I also spend a bit of my free time making games with Unity or playing 
+              computer. I also spend my free time making games with Unity or playing 
               them with my friends.<br/><br/>
               Check out my resumé for some technologies I've been working with.
             </Text>

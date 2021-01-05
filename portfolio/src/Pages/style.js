@@ -32,7 +32,7 @@ export const PTitle = styled.div `
 export const Header = styled.div `
     color: #20a3fa;
     font-size: 36px;
-    margin: 10px 0;
+    margin: 25px 0 10px 0;
 `;
 export const Text = styled.div `
     font-size: 24px;
@@ -51,8 +51,18 @@ export const Portal = styled.iframe `
     max-width: 800px;
     border-style: none;
     border-radius: 8px;
+    
 `;
-
+export const Img = styled.img `
+    margin: 10px auto -30px auto;
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 8px;
+    
+`;
 export const Tools = styled.div`
     margin: 10px 0; 
     font-style: italic;

@@ -10,6 +10,7 @@ export class WhatToWear extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <span id="top"/>
         <TitleBar>
           <PTitle>WhatToWear</PTitle>
           <Flavor>The Most Fail-Safe Weather App...</Flavor>
@@ -21,6 +22,15 @@ export class WhatToWear extends React.Component {
               <a href='https://www.gregoryblood.me/weatherapi/' target='_blank'><HotButton>Visit</HotButton></a>
               <a href='https://github.com/gregoryblood/gregoryblood.github.io/tree/master/weatherapi' target='_blank'><HotButton>GitHub</HotButton></a>
             </Buttons>
+            <Header>
+              What I Learned
+            </Header>
+            <Tools>API calls - Geolocation - Website deploying</Tools>
+            <Text>
+              This was my first site that I wanted to deploy, use, and share. It was 
+              also the first time I used APIs. It was a lot to learn but it wasn't 
+               too hard to implement since the project itself was simple. 
+            </Text>
             <Header>
               About
             </Header>
@@ -39,15 +49,7 @@ export class WhatToWear extends React.Component {
               website to show up on my phone's home screen and use it every morning. I love creating 
               something practical and helpful, even if I'm the only user.
             </Text>
-            <Header>
-              What I Learned
-            </Header>
-            <Tools>API calls - Geolocation - Website deploying</Tools>
-            <Text>
-              This was my first site that I wanted to deploy, use, and share. It was 
-              also the first time I used APIs. It was a lot to learn but it wasn't 
-               too hard to implement since the project itself was simple. 
-            </Text>
+            
           </Body>
         </Core>
       </React.Fragment>
