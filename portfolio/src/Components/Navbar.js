@@ -23,6 +23,8 @@ const Item = styled.div`
     margin: 10px;
     line-height: 23%;
     z-index: 10;
+    transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
     &:hover {
         background-color: #00a3f5;
         color: white;

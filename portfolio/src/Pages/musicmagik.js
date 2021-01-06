@@ -67,7 +67,6 @@ export class MusicMajik extends React.Component {
               turned out on mobile. When I go back to this project I will probably update the overall design 
               strategy to make it more 'Spotifyie'.
             </Text>
-            
           </Body>
         </Core>
       </React.Fragment>

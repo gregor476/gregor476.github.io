@@ -11,7 +11,7 @@ const Core = styled.div `
   position: relative;
   top: 91vh;
   margin: 40px auto 0 auto;
-  padding: 0 0 1000px 0;
+  padding: 0 0 200px 0;
   width: 100%;
   background: ${color};
   box-shadow: 0px -12px 24px 0px rgba(0,0,0,0.6);
@@ -29,12 +29,22 @@ const Section = styled.div `
 const Header = styled.div `
   font-weight: 800;
   font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  @media(max-width: 768px) {
+    text-align: left;
+    font-size: 28px;
+  }
 `;
 const Flavor = styled.div `
   padding: 10px 0;
   font-size: 20px;
   font-style: italic;
   color: ${flavorText};
+  text-align: center;
+  @media(max-width: 768px) {
+    text-align: left;
+  }
 `;
 const Text = styled.div `
   font-size: 24px;
@@ -70,6 +80,7 @@ export const HotButton = styled.button `
   background-color: #1c1c1c;
   width: 200px;
   margin: 20px 40px 0 0px;
+  outline:none;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
   &:hover {
@@ -78,7 +89,6 @@ export const HotButton = styled.button `
     color: black;
     background-color: white;
   }
-  
 `;
 const Disclaimer = styled.div `
   font-size: 24px;
@@ -94,7 +104,7 @@ const Input_ = styled.input `
   border-radius: 8px;
   font-size: 24px;
   margin: 10px 0;
-  padding: 4px;
+  padding: 4px 0px 4px 0px;
   &:focus {
     outline: none !important;
   }
@@ -107,12 +117,10 @@ const Text_ = styled.textarea `
   font-family: inherit;
   border-radius: 8px;
   font-size: 24px;
-  
   margin: 10px 0;
-  padding: 4px;
+  padding: 4px 0px 4px 0px;
   resize: none;
   overflow: auto;
-  
 
   &:focus {
     outline: none !important;
@@ -129,9 +137,10 @@ const Submit_ = styled.a `
   padding: 10px 0;
   font-weight: bold;
   font-size: 24px;
-  font-family: inherit;
   color: black;
   text-decoration: none;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
   &:hover {
     background-color: ${flavorColor};
     color: white;

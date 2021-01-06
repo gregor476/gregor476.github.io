@@ -6,13 +6,11 @@ import Navbar from './Components/Navbar';
 import MusicMajik from './Pages/musicmagik';
 import WhatToWear from './Pages/whattowear';
 import PureHoney from './Pages/purehoney';
+import Ships from './Pages/ships';
 
 
 
 class App extends React.Component  {
-
-  
-
   render() {
     return (
       <div>
@@ -26,6 +24,9 @@ class App extends React.Component  {
           </Route>
           <Route path="/purehoney">
             <PureHoney/>
+          </Route>
+          <Route path="/ships">
+            <Ships/>
           </Route>
           <Route path="/">
             <Title/>

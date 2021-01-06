@@ -9,11 +9,13 @@ import { NavLink } from 'react-router-dom';
 
 const CardArea = styled.div`
   display: flexbox;
+  display:-webkit-flex;
   flex-wrap: wrap;
   text-align: center;
   width: 100%;
   max-width: 1200px;
   align-items: center;
+
   @media(max-width: 768px) {
     justify-content: center;
   }
@@ -35,8 +37,8 @@ const Img = styled.img `
   width: 100%;
   margin: 0;
   padding: 0;
-  transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
   object-fit: cover;
   &:hover {
     opacity: 0.35;
