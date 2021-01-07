@@ -16,8 +16,8 @@ class App extends React.Component  {
     return (
       <div>
         <Navbar/>
-        <Switch >
-        <Route path="/masterblaster">
+        <Switch>
+          <Route path="/masterblaster">
             <MasterBlaster/>
           </Route>
           <Route path="/whattowear">

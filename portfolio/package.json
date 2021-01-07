@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://www.gregoryblood.me/home",
-
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
@@ -43,5 +42,4 @@
       "last 1 safari version"
     ]
   }
-  
 }
