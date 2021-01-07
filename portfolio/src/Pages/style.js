@@ -45,21 +45,24 @@ export const Flavor = styled.div `
     padding: 0px 20px 20px 20px;
 `;
 export const Portal = styled.iframe `
-    margin: 10px auto -30px auto;
-    display: block;
-    width: 90%;
-    max-width: 800px;
-    border-style: none;
-    border-radius: 8px;
-    
-`;
-export const Img = styled.img `
-    margin: 10px auto -30px auto;
+    margin: 30px auto 30px auto;
     display: block;
     width: 90%;
     max-width: 800px;
     border-style: solid;
-    border-color: gray;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 8px;
+    
+`;
+export const Img = styled.img `
+    margin: 30px auto 30px auto;
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
     border-radius: 8px;
     
 `;

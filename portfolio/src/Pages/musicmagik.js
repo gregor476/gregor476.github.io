@@ -1,7 +1,7 @@
 import React from 'react';
 import {PTitle, Body, Core, Header, Flavor, Portal, TitleBar,
         Tools, Text} from './style';
-import {Buttons, HotButton} from '../Components/Body';
+import {Buttons, HotButton, Disclaimer} from '../Components/Body';
 
 export class MusicMajik extends React.Component {  
   componentDidMount() {
@@ -17,6 +17,7 @@ export class MusicMajik extends React.Component {
         </TitleBar>
         <Core>
           <Body>
+            <Disclaimer>This takes a moment to load</Disclaimer>
             <Portal src="https://spotify-organizer-web.herokuapp.com/" width="540" height="400"></Portal>
             <Buttons>
               <a href='https://spotify-organizer-web.herokuapp.com/' target='_blank'><HotButton>Visit</HotButton></a>

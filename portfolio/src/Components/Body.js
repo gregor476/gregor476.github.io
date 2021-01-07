@@ -53,7 +53,7 @@ const CardArea = styled.div `
   margin: 0;
   padding: 0;
 `;
-const Link = styled.a `
+export const Link = styled.a `
   text-decoration: none;
   color: ${flavorColor};
   &:hover {
@@ -90,7 +90,7 @@ export const HotButton = styled.button `
     background-color: white;
   }
 `;
-const Disclaimer = styled.div `
+export const Disclaimer = styled.div `
   font-size: 24px;
   font-weight: bold;
   color: red;

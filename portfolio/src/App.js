@@ -7,6 +7,7 @@ import MusicMajik from './Pages/musicmagik';
 import WhatToWear from './Pages/whattowear';
 import PureHoney from './Pages/purehoney';
 import Ships from './Pages/ships';
+import MasterBlaster from './Pages/masterblaster';
 
 
 
@@ -16,6 +17,9 @@ class App extends React.Component  {
       <div>
         <Navbar/>
         <Switch >
+        <Route path="/masterblaster">
+            <MasterBlaster/>
+          </Route>
           <Route path="/whattowear">
             <WhatToWear/>
           </Route>
