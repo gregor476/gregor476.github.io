@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/home/static/css/main.e46a956e.chunk.css",
+    "main.js": "/home/static/js/main.404e4067.chunk.js",
+    "main.js.map": "/home/static/js/main.404e4067.chunk.js.map",
+    "runtime-main.js": "/home/static/js/runtime-main.56137043.js",
+    "runtime-main.js.map": "/home/static/js/runtime-main.56137043.js.map",
+    "static/js/2.8e543abf.chunk.js": "/home/static/js/2.8e543abf.chunk.js",
+    "static/js/2.8e543abf.chunk.js.map": "/home/static/js/2.8e543abf.chunk.js.map",
+    "index.html": "/home/index.html",
+    "precache-manifest.68ff0e3c108f9a0ed623b4cff49e4a81.js": "/home/precache-manifest.68ff0e3c108f9a0ed623b4cff49e4a81.js",
+    "service-worker.js": "/home/service-worker.js",
+    "static/css/main.e46a956e.chunk.css.map": "/home/static/css/main.e46a956e.chunk.css.map",
+    "static/js/2.8e543abf.chunk.js.LICENSE.txt": "/home/static/js/2.8e543abf.chunk.js.LICENSE.txt",
+    "static/media/capstone.PNG": "/home/static/media/capstone.95887a8c.PNG",
+    "static/media/mb1.png": "/home/static/media/mb1.316bfe68.png",
+    "static/media/mb2.png": "/home/static/media/mb2.096bb49f.png",
+    "static/media/mb3.png": "/home/static/media/mb3.dd77f30a.png",
+    "static/media/mm1.png": "/home/static/media/mm1.d5010bba.png",
+    "static/media/osu.PNG": "/home/static/media/osu.52007569.PNG",
+    "static/media/ph1.jpg": "/home/static/media/ph1.5cb398df.jpg",
+    "static/media/ph2.png": "/home/static/media/ph2.86d930c3.png",
+    "static/media/ships.png": "/home/static/media/ships.3b8d9c94.png",
+    "static/media/whattowear.png": "/home/static/media/whattowear.14c86f32.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.56137043.js",
+    "static/js/2.8e543abf.chunk.js",
+    "static/css/main.e46a956e.chunk.css",
+    "static/js/main.404e4067.chunk.js"
+  ]
+}
