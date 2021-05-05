@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/web-build/static/js/app.ec9404a5.chunk.js",
-    "app.js.map": "/web-build/static/js/app.ec9404a5.chunk.js.map",
+    "app.js": "/web-build/static/js/app.5c158eb6.chunk.js",
+    "app.js.map": "/web-build/static/js/app.5c158eb6.chunk.js.map",
     "runtime~app.js": "/web-build/static/js/runtime~app.0960814e.js",
     "runtime~app.js.map": "/web-build/static/js/runtime~app.0960814e.js.map",
-    "static/js/2.0cbcaef6.chunk.js": "/web-build/static/js/2.0cbcaef6.chunk.js",
-    "static/js/2.0cbcaef6.chunk.js.map": "/web-build/static/js/2.0cbcaef6.chunk.js.map",
+    "static/js/2.7f4812cb.chunk.js": "/web-build/static/js/2.7f4812cb.chunk.js",
+    "static/js/2.7f4812cb.chunk.js.map": "/web-build/static/js/2.7f4812cb.chunk.js.map",
     "fonts/AntDesign.ttf": "/web-build/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/web-build/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/web-build/./fonts/Feather.ttf",
@@ -21,11 +21,11 @@
     "index.html": "/web-build/index.html",
     "manifest.json": "/web-build/manifest.json",
     "serve.json": "/web-build/serve.json",
-    "static/js/2.0cbcaef6.chunk.js.LICENSE.txt": "/web-build/static/js/2.0cbcaef6.chunk.js.LICENSE.txt"
+    "static/js/2.7f4812cb.chunk.js.LICENSE.txt": "/web-build/static/js/2.7f4812cb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.0960814e.js",
-    "static/js/2.0cbcaef6.chunk.js",
-    "static/js/app.ec9404a5.chunk.js"
+    "static/js/2.7f4812cb.chunk.js",
+    "static/js/app.5c158eb6.chunk.js"
   ]
 }
