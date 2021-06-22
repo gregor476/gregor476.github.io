@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/portfolio/static/js/main.7f64783b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7f64783b.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.a1c784db.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a1c784db.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.ea9fac03.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.ea9fac03.js.map",
     "static/js/2.f40adcab.chunk.js": "/portfolio/static/js/2.f40adcab.chunk.js",
@@ -15,16 +15,16 @@
     "static/media/kg1.f2524a9f.PNG": "/portfolio/static/media/kg1.f2524a9f.PNG",
     "static/media/mb3.9538302e.png": "/portfolio/static/media/mb3.9538302e.png",
     "static/media/mm1.c85f3f59.png": "/portfolio/static/media/mm1.c85f3f59.png",
-    "static/media/osu.cb6113ca.PNG": "/portfolio/static/media/osu.cb6113ca.PNG",
+    "static/media/osu.01b53e71.PNG": "/portfolio/static/media/osu.01b53e71.PNG",
     "static/media/ph1.7603c0ff.jpg": "/portfolio/static/media/ph1.7603c0ff.jpg",
     "static/media/ships.2c333a60.png": "/portfolio/static/media/ships.2c333a60.png",
-    "static/media/wave.dd8dd67b.svg": "/portfolio/static/media/wave.dd8dd67b.svg",
+    "static/media/wave.030c9625.svg": "/portfolio/static/media/wave.030c9625.svg",
     "static/media/whattowear.0bb55bf5.png": "/portfolio/static/media/whattowear.0bb55bf5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ea9fac03.js",
     "static/js/2.f40adcab.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.7f64783b.chunk.js"
+    "static/js/main.a1c784db.chunk.js"
   ]
 }
