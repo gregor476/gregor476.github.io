@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>HessCoin</title>
+
+    <!-- This is a 3rd-party stylesheet to make available the font family to be used for this page ("Roboto"). -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" media="screen">
+
+    <script src="main.js" charset="utf-8" defer></script>
+
+</head>
+<body>
+<header>
+    <!-- The <i> tag below includes the bullhorn icon from Font Awesome -->
+    <h1 id="mainTitle" >HessCoin Miner</h1>
+
+    <nav class="navbar">
+        <a href="#" id="save">Save</a>
+        <a href="#" id="reset">Reset</a>
+        <a href="highScores" id="viewHighScores">Scores</a>
+    </nav>
+</header>
+    <div id= "flexcontainer" class= "flexcontainer" >
+        <div id="gpu" class="gpustyle">
+            <h2>GPUs</h2>
+            <div id= "buylegend"> Name | # Owned | Price | Per Click</div>
+            <div class = "gpubutton" id = "gpu0">
+                    <div id = "name">Hamster Wheel</div>
+                    <div id = "gpu0a"></div>
+                    <div id = "gpu0c"></div>
+                    <div id = "gpu0p">1</div>
+            </div>
+            <div class = "gpubutton" id = "gpu1">
+                    <div id = "name">Old Laptop   </div>
+                    <div id = "gpu1a"></div>
+                    <div id = "gpu1c"></div>
+                    <div id = "gpu1p">5</div>
+            </div>
+            <div class = "gpubutton" id = "gpu2">
+                    <div id = "name">Radeon 570   </div>
+                    <div id = "gpu2a"></div>
+                    <div id = "gpu2c"></div>
+                    <div id = "gpu2p">50</div>
+            </div>
+            <div class = "gpubutton" id = "gpu3">
+                    <div id = "name">GTX 760</div>
+                    <div id = "gpu3a"></div>
+                    <div id = "gpu3c"></div>
+                    <div id = "gpu3p">150</div>
+            </div>
+            <div class = "gpubutton" id = "gpu4">
+                    <div id = "name">GTX 1080ti</div>
+                    <div id = "gpu4a"></div>
+                    <div id = "gpu4c"></div>
+                    <div id = "gpu4p">300</div>
+            </div>
+            <div class = "gpubutton" id = "gpu5">
+                    <div id = "name">RTX 2080ti</div>
+                    <div id = "gpu5a"></div>
+                    <div id = "gpu5c"></div>
+                    <div id = "gpu5p">1000</div>
+            </div>
+            <div class = "gpubutton" id = "gpu6">
+                    <div id = "name">Quantum Computer</div>
+                    <div id = "gpu6a"></div>
+                    <div id = "gpu6c"></div>
+                    <div id = "gpu6p">5000</div>
+            </div>
+
+            <div id = "coinsperclick">
+                Coins Per Click:
+                <div id="gpuTotal"></div>
+            </div>
+
+        </div>
+
+        <div id="middle" class="middlestyle">
+            <div id= "hash" >   </div>    
+            <button id="clicker" class = "clickerstyle" >[ Mine ]</button>
+                <div id= "midinfo">
+                        <div id = "mid1" >
+                                <div id="hessCoins" ></div>
+                                <div id = "hesscoinsat"> HessCoins at $</div>
+                                <div id="value"></div>
+                        </div>
+                        <div id ="mid2">
+                                <div id = "eachtotal">  Total $</div>
+                                <div id="money"></div>
+                        </div>
+                </div>
+
+        </div>
+
+        <div id="inf" class="infstyle">
+            <h2>Market Infuence</h2>
+            <div id= "buylegend"> Name | # Owned | Price | Per Second</div>
+            <div class = "infbutton" id = "inf0">
+                    <div id = "name">Facebook Post</div>
+                    <div id = "inf0a"></div>
+                    <div id = "inf0c"></div>
+                    <div id = "inf0p">1</div>
+            </div>
+            <div class = "infbutton" id = "inf1">
+                    <div id = "name">Grandma</div>
+                    <div id = "inf1a"></div>
+                    <div id = "inf1c"></div>
+                    <div id = "inf1p">5</div>
+            </div>
+            <div class = "infbutton" id = "inf2">
+                    <div id = "name">Billboard</div>
+                    <div id = "inf2a"></div>
+                    <div id = "inf2c"></div>
+                    <div id = "inf2p">50</div>
+            </div>
+            <div class = "infbutton" id = "inf3">
+                    <div id = "name">Marketer</div>
+                    <div id = "inf3a"></div>
+                    <div id = "inf3c"></div>
+                    <div id = "inf3p">150</div>
+            </div>
+            <div class = "infbutton" id = "inf4">
+                    <div id = "name">Mass Phishing</div>
+                    <div id = "inf4a"></div>
+                    <div id = "inf4c"></div>
+                    <div id = "inf4p">300</div>
+            </div>
+            <div class = "infbutton" id = "inf5">
+                    <div id = "name">Congressman</div>
+                    <div id = "inf5a"></div>
+                    <div id = "inf5c"></div>
+                    <div id = "inf5p">1000</div>
+            </div>
+            <div class = "infbutton" id = "inf6">
+                    <div id = "name">Country Leader</div>
+                    <div id = "inf6a"></div>
+                    <div id = "inf6c"></div>
+                    <div id = "inf6p">5000</div>
+            </div>
+
+            <div id= "pricepersec">
+                HessCoin Per Second:
+                <div id="infTotal"></div>
+            </div>
+        </div>
+    </div>
+</body>

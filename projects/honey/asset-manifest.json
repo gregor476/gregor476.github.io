@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/honey/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/honey/static/js/main.34425172.chunk.js",
+    "main.js.map": "/honey/static/js/main.34425172.chunk.js.map",
+    "runtime-main.js": "/honey/static/js/runtime-main.87d3d6b2.js",
+    "runtime-main.js.map": "/honey/static/js/runtime-main.87d3d6b2.js.map",
+    "static/js/2.83c886c6.chunk.js": "/honey/static/js/2.83c886c6.chunk.js",
+    "static/js/2.83c886c6.chunk.js.map": "/honey/static/js/2.83c886c6.chunk.js.map",
+    "index.html": "/honey/index.html",
+    "precache-manifest.585ef2961f9eabd53c0277d21dbf3dcb.js": "/honey/precache-manifest.585ef2961f9eabd53c0277d21dbf3dcb.js",
+    "service-worker.js": "/honey/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/honey/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.83c886c6.chunk.js.LICENSE.txt": "/honey/static/js/2.83c886c6.chunk.js.LICENSE.txt",
+    "static/media/action.jpg": "/honey/static/media/action.6ee3d66a.jpg",
+    "static/media/jar.jpeg": "/honey/static/media/jar.5cb398df.jpeg",
+    "static/media/themakers.jpg": "/honey/static/media/themakers.666d488e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.87d3d6b2.js",
+    "static/js/2.83c886c6.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.34425172.chunk.js"
+  ]
+}

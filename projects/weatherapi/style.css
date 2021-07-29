@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: -moz-hidden-unscrollable;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(1, 80, 133) , rgb(102, 80, 255));
+    color: white;
+}
+.text {
+    margin-left: 2%;
+    float: left;
+    font-size: calc(26px + 10vw);
+}
