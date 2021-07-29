@@ -1,7 +1,0 @@
-{
-  "display": "standalone",
-  "lang": "en",
-  "name": "Event-Management-App",
-  "short_name": "Event-Management-App",
-  "start_url": "/?utm_source=web_app_manifest"
-}
