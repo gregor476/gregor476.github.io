@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/projects/animals/static/css/main.6d1feebb.chunk.css",
-    "main.js": "/projects/animals/static/js/main.0ed404c6.chunk.js",
-    "main.js.map": "/projects/animals/static/js/main.0ed404c6.chunk.js.map",
-    "runtime-main.js": "/projects/animals/static/js/runtime-main.170e1eaf.js",
-    "runtime-main.js.map": "/projects/animals/static/js/runtime-main.170e1eaf.js.map",
-    "static/js/2.e92b1d0b.chunk.js": "/projects/animals/static/js/2.e92b1d0b.chunk.js",
-    "static/js/2.e92b1d0b.chunk.js.map": "/projects/animals/static/js/2.e92b1d0b.chunk.js.map",
-    "static/js/3.e4f08849.chunk.js": "/projects/animals/static/js/3.e4f08849.chunk.js",
-    "static/js/3.e4f08849.chunk.js.map": "/projects/animals/static/js/3.e4f08849.chunk.js.map",
-    "index.html": "/projects/animals/index.html",
-    "static/css/main.6d1feebb.chunk.css.map": "/projects/animals/static/css/main.6d1feebb.chunk.css.map",
-    "static/js/2.e92b1d0b.chunk.js.LICENSE.txt": "/projects/animals/static/js/2.e92b1d0b.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/projects/animals/static/media/logo.6ce24c58.svg"
+    "main.css": "/projects/animal/static/css/main.6d1feebb.chunk.css",
+    "main.js": "/projects/animal/static/js/main.0ed404c6.chunk.js",
+    "main.js.map": "/projects/animal/static/js/main.0ed404c6.chunk.js.map",
+    "runtime-main.js": "/projects/animal/static/js/runtime-main.877249de.js",
+    "runtime-main.js.map": "/projects/animal/static/js/runtime-main.877249de.js.map",
+    "static/js/2.e92b1d0b.chunk.js": "/projects/animal/static/js/2.e92b1d0b.chunk.js",
+    "static/js/2.e92b1d0b.chunk.js.map": "/projects/animal/static/js/2.e92b1d0b.chunk.js.map",
+    "static/js/3.e4f08849.chunk.js": "/projects/animal/static/js/3.e4f08849.chunk.js",
+    "static/js/3.e4f08849.chunk.js.map": "/projects/animal/static/js/3.e4f08849.chunk.js.map",
+    "index.html": "/projects/animal/index.html",
+    "static/css/main.6d1feebb.chunk.css.map": "/projects/animal/static/css/main.6d1feebb.chunk.css.map",
+    "static/js/2.e92b1d0b.chunk.js.LICENSE.txt": "/projects/animal/static/js/2.e92b1d0b.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/projects/animal/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.170e1eaf.js",
+    "static/js/runtime-main.877249de.js",
     "static/js/2.e92b1d0b.chunk.js",
     "static/css/main.6d1feebb.chunk.css",
     "static/js/main.0ed404c6.chunk.js"
