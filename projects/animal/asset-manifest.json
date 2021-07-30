@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/projects/animal/static/css/main.6d1feebb.chunk.css",
+    "main.css": "/projects/animal/static/css/main.0342ddd6.chunk.css",
     "main.js": "/projects/animal/static/js/main.0ed404c6.chunk.js",
     "main.js.map": "/projects/animal/static/js/main.0ed404c6.chunk.js.map",
     "runtime-main.js": "/projects/animal/static/js/runtime-main.877249de.js",
@@ -10,14 +10,14 @@
     "static/js/3.e4f08849.chunk.js": "/projects/animal/static/js/3.e4f08849.chunk.js",
     "static/js/3.e4f08849.chunk.js.map": "/projects/animal/static/js/3.e4f08849.chunk.js.map",
     "index.html": "/projects/animal/index.html",
-    "static/css/main.6d1feebb.chunk.css.map": "/projects/animal/static/css/main.6d1feebb.chunk.css.map",
+    "static/css/main.0342ddd6.chunk.css.map": "/projects/animal/static/css/main.0342ddd6.chunk.css.map",
     "static/js/2.e92b1d0b.chunk.js.LICENSE.txt": "/projects/animal/static/js/2.e92b1d0b.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/projects/animal/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.877249de.js",
     "static/js/2.e92b1d0b.chunk.js",
-    "static/css/main.6d1feebb.chunk.css",
+    "static/css/main.0342ddd6.chunk.css",
     "static/js/main.0ed404c6.chunk.js"
   ]
 }
