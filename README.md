@@ -1,3 +1,3 @@
 # gregoryblood.github.io
-My Website: https://gregoryblood.me
+My Website: https://gregoryblood.com
 <br>
